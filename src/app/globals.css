@@ -1,0 +1,27 @@
+/* globals.css */
+
+:root {
+    --navbar-background-color : #fff;
+    --navbar-text-color : #fff ; 
+    --font_family: 'Poppins', sans-serif !important;
+    --icon_logo_color_navbar : #FF8341;
+    --icon_selected_color_navbar : rgb(255 131 65);
+    --icon_selected_background_color : #f19b6c33;
+    --textColor: white;
+    --buttonTextColor: #fff;
+    --headingColor: rgba(90, 16, 11, 0.8);
+}
+
+body {
+    background-color: white; 
+    color: #000; 
+  }
+
+  body.darkMode {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Dark text color */
+  }
+
+  .dumy{
+    background-color: red;
+  }

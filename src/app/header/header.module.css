@@ -1,0 +1,47 @@
+
+.appBar{
+  background-color: var(--navbar-background-color) !important;
+  color: black !important;
+}
+
+.logoImg{
+  width: 65%;
+  height: 40px;
+}
+
+.listItemParent{
+  /* display: block !important; */
+  padding: 0px !important;
+}
+
+.headerLogo{
+  justify-content: space-between !important;
+  /* min-height: auto !important; */
+}
+
+.SelectedTab{
+  background-color: var(--icon_selected_background_color) !important;
+  color: var(--icon_selected_color_navbar) !important;
+}
+
+
+.LogoColor{
+  color: var(--icon_logo_color_navbar) !important;
+}
+
+.notificationText{
+  display: flex;
+  align-items: center;
+  padding: 10px ;
+}
+
+.notificationIcon{
+  margin-right: 8px !important;
+}
+.darkMode{
+  background-color: red;
+}
+
+.demm{
+  /* left: 775px !important; */
+}
