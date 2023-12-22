@@ -15,9 +15,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import GridViewIcon from '@mui/icons-material/GridView';
 import style from './header.module.css';
-import WidgetsIcon from '@mui/icons-material/Widgets';  
+import WidgetsIcon from '@mui/icons-material/Widgets';
 import Deshboards from '../component/deshboard';
-import Testing from '../component/testing';
+import Testing from '../component/specs';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Switch from '@mui/material/Switch';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -28,6 +28,18 @@ import WineBarIcon from '@mui/icons-material/WineBar';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import FeedIcon from '@mui/icons-material/Feed';
+
+import Collapse from '@mui/material/Collapse';
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
+import Cocktails from '../component/cocktails';
+import Spirits from '../component/spirits';
+import Wine from '../component/wine';
+import Specs from '../component/specs';
+
+import { StylesProvider } from '@mui/system';
 
 
 const drawerWidth = 240;
@@ -101,6 +113,12 @@ export default function page() {
   const [selectedTab, setSelectedTab] = useState('Dashboard');
   const [anchorEl, setAnchorEl] = useState(null);
   const [isDarkMode, setDarkMode] = useState(false);
+  const [isCollapse, setIsCollapse] = useState(false);
+
+
+  const handleCollapse = () => {
+    setIsCollapse(!isCollapse);
+  };
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -127,248 +145,264 @@ export default function page() {
     setAnchorEl(null);
   };
 
+
+
   const opens = Boolean(anchorEl);
 
+
   return (
-    <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar position="fixed" open={open} className={style.appBar}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{
-              marginRight: 5,
-              ...(open && { display: 'none' }),
-            }}
-          >
+    <>
+      <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <AppBar position="fixed" open={open} className={style.appBar}>
+          <Toolbar>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              sx={{
+                marginRight: 5,
+                ...(open && { display: 'none' }),
+              }}
+            >
 
-            <WidgetsIcon />
-          </IconButton>
+              <WidgetsIcon />
+            </IconButton>
 
-          <div>
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          </div>
-
-          <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-
-            <div className={isDarkMode ? style.darkMode : ''}>
-              <FormControlLabel
-                control={<Switch checked={isDarkMode} onChange={hangleChangeDarkMode} />}
-                label=""
-              />
+            <div>
+              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             </div>
 
+            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 
-            <IconButton
-              size="large"
-              color="inherit"
-              onClick={handlePopoverOpen}
-            >
-              <NotificationsIcon />
+              <div className={isDarkMode ? style.darkMode : ''}>
+                <FormControlLabel
+                  control={<Switch checked={isDarkMode} onChange={hangleChangeDarkMode} />}
+                  label=""
+                />
+              </div>
+
+
+              <IconButton
+                size="large"
+                color="inherit"
+                onClick={handlePopoverOpen}
+              >
+                <NotificationsIcon />
+              </IconButton>
+
+              <Popover
+                className={style.demm}
+                open={opens}
+                anchorEl={anchorEl}
+                onClose={handlePopoverClose}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'center',
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'center',
+                }}
+              >
+                <Typography sx={{ p: 2 }}>Notification</Typography>
+                <Typography className={style.notificationText}>
+                  <CoffeeIcon className={style.notificationIcon} />
+                  You are just a step away from earning your Bourbon Certificate
+                </Typography>
+
+                <Typography className={style.notificationText}>
+                  <WineBarIcon className={style.notificationIcon} />
+                  Explore this week's new cocktail recipe & enhance your mixology skills!
+                </Typography>
+
+                <Typography className={style.notificationText}>
+                  <OpenInBrowserIcon className={style.notificationIcon} />
+                  Time to restock! Check your inventory before the weekend rush.
+                </Typography>
+
+                <Typography className={style.notificationText}>
+                  <LocalBarIcon className={style.notificationIcon} />
+                  Important: Check the latest health and safety guidelines for bartenders.
+                </Typography>
+
+                <Typography className={style.notificationText}>
+                  <CheckCircleOutlineIcon className={style.notificationIcon} />
+                  Your weekly customer feedback summary is now available. Take a look!
+                </Typography>
+
+                <Typography className={style.notificationText}>
+                  <FeedIcon className={style.notificationIcon} />
+                  Don't forget to complete your bar closing side-work checklist!
+                </Typography>
+              </Popover>
+
+              <IconButton sx={{ p: 0, marginLeft: 1 }}>
+                <Avatar alt="Remy Sharp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtmuKwjrnxncWjaeLRqc52s4QxuhjAd-c6Jdgon2N6A&s" />
+              </IconButton>
+              <Typography variant="body1" sx={{ marginLeft: 1, marginTop: 1 }}>
+                Aria Bennett
+              </Typography>
+
+            </Box>
+          </Toolbar>
+        </AppBar>
+
+
+        <Drawer variant="permanent" open={open}>
+          <DrawerHeader className={style.headerLogo}>
+            <div className={style.logoImg}>
+              <img src="/logo.svg" alt="Your Image Alt Text" style={{ width: '100%', height: '100%' }} />
+            </div>
+            <IconButton onClick={handleDrawerClose}>
+              <WidgetsIcon className={style.LogoColor} />
             </IconButton>
-
-            <Popover
-            className={style.demm}
-              open={opens}
-              anchorEl={anchorEl}
-              onClose={handlePopoverClose}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'center',
-              }}
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'center',
-              }}
-            >
-              <Typography sx={{ p: 2 }}>Notification</Typography>
-              <Typography className={style.notificationText}>
-                <CoffeeIcon className={style.notificationIcon} />
-                You are just a step away from earning your Bourbon Certificate
-              </Typography>
-
-              <Typography className={style.notificationText}>
-                <WineBarIcon className={style.notificationIcon} />
-                Explore this week's new cocktail recipe & enhance your mixology skills!
-              </Typography>
-
-              <Typography className={style.notificationText}>
-                <OpenInBrowserIcon className={style.notificationIcon} />
-                Time to restock! Check your inventory before the weekend rush.
-              </Typography>
-
-              <Typography className={style.notificationText}>
-                <LocalBarIcon className={style.notificationIcon} />
-                Important: Check the latest health and safety guidelines for bartenders.
-              </Typography>
-
-              <Typography className={style.notificationText}>
-                <CheckCircleOutlineIcon className={style.notificationIcon} />
-                Your weekly customer feedback summary is now available. Take a look!
-              </Typography>
-
-              <Typography className={style.notificationText}>
-                <FeedIcon className={style.notificationIcon} />
-                Don't forget to complete your bar closing side-work checklist!
-              </Typography>
-            </Popover>
-
-            <IconButton sx={{ p: 0, marginLeft: 1 }}>
-              <Avatar alt="Remy Sharp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtmuKwjrnxncWjaeLRqc52s4QxuhjAd-c6Jdgon2N6A&s" />
-            </IconButton>
-            <Typography variant="body1" sx={{ marginLeft: 1, marginTop: 1 }}>
-              Aria Bennett
-            </Typography>
-
-          </Box>
-        </Toolbar>
-      </AppBar>
-
-
-      <Drawer variant="permanent" open={open}>
-        <DrawerHeader className={style.headerLogo}>
-          <div className={style.logoImg}>
-            <img src="/logo.svg" alt="Your Image Alt Text" style={{ width: '100%', height: '100%' }} />
-          </div>
-          <IconButton onClick={handleDrawerClose}>
-            <WidgetsIcon className={style.LogoColor} />
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <List>
-          {/* {['Dashboard', 'Specs', 'Library', 'Chechlists', 'Marriott', 'Setting', 'Logout'].map((text, index) => ( */}
-          <ListItem className={style.listItemParent}>
-            <ListItemButton
-              className={selectedTab === 'Dashboard' ? `${style.SelectedTab}` : ''}
-              onClick={() => handleTabClick('Dashboard')}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
+          </DrawerHeader>
+          <Divider />
+          <List>
+            {/* {['Dashboard', 'Specs', 'Library', 'Chechlists', 'Marriott', 'Setting', 'Logout'].map((text, index) => ( */}
+            <ListItem className={style.listItemParent}>
+              <ListItemButton
                 className={selectedTab === 'Dashboard' ? `${style.SelectedTab}` : ''}
+                onClick={() => handleTabClick('Dashboard')}
                 sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
                 }}
               >
-                <GridViewIcon />
-              </ListItemIcon>
-              <ListItemText primary="Dashboard" sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          </ListItem>
+                <ListItemIcon
+                  className={selectedTab === 'Dashboard' ? `${style.SelectedTab}` : ''}
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <GridViewIcon />
+                </ListItemIcon>
+                <ListItemText primary="Dashboard" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
 
-          <ListItem className={style.listItemParent}>
-            <ListItemButton
-              className={selectedTab === 'Specs' ? `${style.SelectedTab}` : ''}
-              onClick={() => handleTabClick('Specs')}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
+            <ListItem className={style.listItemParent} onClick={() => handleCollapse()}>
+              <ListItemButton
                 className={selectedTab === 'Specs' ? `${style.SelectedTab}` : ''}
+                onClick={() => handleTabClick('Specs')}
                 sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
                 }}
               >
-                <LocalBarIcon />
-              </ListItemIcon>
-              <ListItemText primary="Specs" sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          </ListItem>
+                <ListItemIcon
+                  className={selectedTab === 'Specs' ? `${style.SelectedTab}` : ''}
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <LocalBarIcon />
+                </ListItemIcon>
+                <ListItemText primary="Specs" sx={{ opacity: open ? 1 : 0 }} />
+                {isCollapse ? <ExpandMore /> : <ExpandLess />}
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
 
-          {/* <ListItem className={style.listItemParent}>
-            <ListItemButton
-              className={selectedTab === 'Cocktails' ? `${style.SelectedTab}` : ''}
-              onClick={() => handleTabClick('Cocktails')}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                className={selectedTab === 'Cocktails' ? `${style.SelectedTab}` : ''}
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
-                }}
-              >
-                <LocalBarIcon />
-              </ListItemIcon>
-              <ListItemText primary="Cocktails" sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          </ListItem>
+              <Collapse in={isCollapse} timeout="auto">
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Cocktails' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Cocktails')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Cocktails' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Cocktails" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem className={style.listItemParent}>
-            <ListItemButton
-              className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
-              onClick={() => handleTabClick('Spirits')}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
-                }}
-              >
-                <LocalBarIcon />
-              </ListItemIcon>
-              <ListItemText primary="Spirits" sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          </ListItem>
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Spirits')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Spirits" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem className={style.listItemParent}>
-            <ListItemButton
-              className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
-              onClick={() => handleTabClick('Wine')}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
-                }}
-              >
-                <LocalBarIcon />
-              </ListItemIcon>
-              <ListItemText primary="Wine" sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          </ListItem> */}
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Wine')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Wine" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
+              </Collapse>
+            </ListItem>
 
-        </List>
 
-      </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <DrawerHeader />
-        {selectedTab == "Dashboard" && <Deshboards />}
-        {selectedTab == "Specs" && <Testing />}
+
+          </List>
+
+        </Drawer>
+        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+          <DrawerHeader />
+          {selectedTab == "Dashboard" && <Deshboards />}
+          {selectedTab == "Specs" && <Specs />}
+          {selectedTab == "Cocktails" && <Cocktails />}
+          {selectedTab == "Spirits" && <Spirits />}
+          {selectedTab == "Wine" && <Wine />}
+        </Box>
       </Box>
-    </Box>
+      {/* </StylesProvider> */}
+    </>
   );
 }

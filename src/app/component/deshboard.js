@@ -321,7 +321,6 @@ const Deshboards = () => {
                           <p>Complete Course to Earn Certificate</p>
                         </div>
                       </div>
-
                     </div>
                   </ListItem>
                 </List>
