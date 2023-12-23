@@ -16,8 +16,6 @@ import ListItemText from '@mui/material/ListItemText';
 import GridViewIcon from '@mui/icons-material/GridView';
 import style from './header.module.css';
 import WidgetsIcon from '@mui/icons-material/Widgets';
-import Deshboards from '../component/deshboard';
-import Testing from '../component/specs';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Switch from '@mui/material/Switch';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -32,14 +30,12 @@ import FeedIcon from '@mui/icons-material/Feed';
 import Collapse from '@mui/material/Collapse';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import ExpandLess from '@mui/icons-material/ExpandLess';
-
+import Wine from '../component/wines/page';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
-import Cocktails from '../component/cocktails';
-import Spirits from '../component/spirits';
-import Wine from '../component/wine';
-import Specs from '../component/specs';
-
-import { StylesProvider } from '@mui/system';
+import Spirits from '../component/spirits/page';
+import Cocktails from '../component/cocktails/page';
+import Specs from '../component/specs/page'
+import Dashboard from '../component/dashboard/page';
 
 
 const drawerWidth = 240;
@@ -388,21 +384,18 @@ export default function page() {
               </Collapse>
             </ListItem>
 
-
-
           </List>
 
         </Drawer>
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <DrawerHeader />
-          {selectedTab == "Dashboard" && <Deshboards />}
+          {selectedTab == "Dashboard" && <Dashboard />}
           {selectedTab == "Specs" && <Specs />}
           {selectedTab == "Cocktails" && <Cocktails />}
           {selectedTab == "Spirits" && <Spirits />}
           {selectedTab == "Wine" && <Wine />}
         </Box>
       </Box>
-      {/* </StylesProvider> */}
     </>
   );
 }

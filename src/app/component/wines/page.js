@@ -2,7 +2,9 @@ import React from 'react'
 
 const Wine = () => {
   return (
-    <div>Wine</div>
+    <div>
+        <h2>hello  i am wine </h2>
+    </div>
   )
 }
 

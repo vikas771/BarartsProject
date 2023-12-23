@@ -29,36 +29,11 @@
 
 .FirstCarousel {
     background-color: rergba(248, 248, 248, 255);
-    border: 2px solid rgba(255, 131, 65, 255);
     padding: 10px;
 }
 
 .FirstCarousel h4 {
     margin-top: 5px !important;
-    /* margin-bottom: 2px !important; */
     font-size: 18px !important;
 }
 
-
-/* First Carousel css start here  */
-
-
-.imgsection{
-    padding: 0 10px;
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-.mycard {
-    min-width: 300px;
-    max-width: 300px;
-
-    height: 400px;
-    background-color: black;
-    margin: 10px;
-    color: white;
-}
-  
-
-/* First Carousel css end here  */

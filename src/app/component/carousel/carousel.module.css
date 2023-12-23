@@ -1,0 +1,196 @@
+/* first carousel start here of Cocktails */
+
+.Carousels {
+    padding: 20px;
+}
+
+.FirstCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    min-height: 420px !important;
+}
+
+.FirstCarousels h3 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.FirstParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.FirstImgSection {
+    text-align: center;
+    height: 270px;
+    width: 225px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.FirstImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    height: 201px;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.FirstImgSection h3 {
+    background-color: rgba(252, 235, 226, 255);
+    margin-top: 3px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.FirstCarouselNextBtn {
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.FirstCarouselPrevBtn {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.iconBtnFirst {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+/* first carousel end  here of Cocktails */
+
+/* Second carousel start here of Core Beverage */
+
+.SecondCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    min-height: 415px !important;
+    margin-top: 10px;
+}
+
+.SecondCarousels h3 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.SecondParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.SecondImgSection {
+    margin: 5px;
+    position: relative;
+}
+
+.SecondImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    margin: 10px;
+    min-width: 420px;
+    color: white;
+    border-radius: 10px;
+}
+
+.SecondImgSection h3 {
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    color: white;
+}
+
+.SecondCarouselNextBtn {
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.SecondCarouselPrevBtn {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.iconBtnSecond {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+/* Second carousel end here of Core Beverage */
+
+/* Third carousel end here of Core Beverage */
+
+.ThirdCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    min-height: 520px !important;
+    margin-top: 10px;
+}
+
+.ThirdCarousels h3 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.ThirdParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.ThirdImgSection {
+    margin: 5px;
+    position: relative;
+}
+
+.ThirdImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    margin: 10px;
+    min-width: 230px;
+    color: white;
+    border-radius: 10px;
+}
+
+.ThirdImgSection h3 {
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    position: absolute;
+    top: 78%;
+    left: 10px;
+    color: white;
+}
+
+.ThirdCarouselNextBtn {
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.ThirdCarouselPrevBtn {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.iconBtnThird {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+/* Third carousel end here of Core Beverage */

@@ -16,7 +16,7 @@ const pieChartData = [
 
 const COLORS = ['#f44336', '#2196f3', '#4caf50', '#ff9800'];
 
-const Deshboards = () => {
+const Dashboard = () => {
   return (
     <>
       <div className={Style.DashboardParent}>
@@ -333,4 +333,4 @@ const Deshboards = () => {
   )
 }
 
-export default Deshboards
+export default Dashboard;
