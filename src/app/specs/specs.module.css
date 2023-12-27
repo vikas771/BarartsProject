@@ -1,8 +1,49 @@
+.SpecsParent {
+    background-color: rgba(248, 248, 248, 255);
+}
+
+.headingSeach {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headingSeach h4 {
+    font-size: 20px !important;
+}
+
+.SeachInpput {
+    height: 40px !important;
+    width: 380px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 131, 65, 255);
+}
+
+.HeadingParetn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* First Carousel css start here  */
+
+.FirstCarousel {
+    background-color: rergba(248, 248, 248, 255);
+    padding: 10px;
+    width: 1230px;
+}
+
+.FirstCarousel h4 {
+    margin-top: 5px !important;
+    font-size: 18px !important;
+}
+
+
 /* first carousel start here of Cocktails */
 
 .Carousels {
     padding: 20px;
-}
+}   
 
 .FirstCarousels {
     background-color: rgba(244, 244, 244, 255);

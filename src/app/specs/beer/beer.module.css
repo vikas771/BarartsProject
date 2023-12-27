@@ -1,0 +1,65 @@
+.BeerParent {
+    background-color: rgba(248, 248, 248, 255);
+    padding: 10px;
+}
+
+.HeadSeachbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HeadSeachbar h3 {
+    font-size: 20px;
+}
+
+.SeachBar {
+    border-radius: 5px;
+    border: 2px solid rgba(255, 131, 65, 255);
+}
+
+.SeachInpput {
+    width: 220px;
+    padding: 10px;
+}
+
+.imgSection {
+    height: 150px;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 255);
+    border-radius: 10px;
+}
+
+.imgSection img {
+    height: 100%;
+    width: 100%;
+}
+
+.TextArea {
+    background-color: rgba(255, 255, 255, 255);
+    margin-left: 20px;
+    padding: 10px;
+    min-height: 145px;
+    min-width: 1025px;
+    border-radius: 10px;
+}
+
+.mainParent {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.TextArea h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.TextArea p {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.Icons {
+    background-color: rgba(245, 245, 245, 255) !important;
+}

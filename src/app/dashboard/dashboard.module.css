@@ -1,16 +1,19 @@
 .DashboardParent {
     background-color: rgba(248, 248, 248, 255);
+    font-family: var(--fontFamily) !important;
 }
 
 .DashboardParent h2 {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     font-size: 20px;
+    font-family: var(--fontFamily) !important;
 }
 
 .DashboardParent p {
     margin-top: 0px !important;
     font-size: 14px;
+    font-family: var(--fontFamily) !important;
 }
 
 .GraphParent {
@@ -23,6 +26,7 @@
 .HeadingText {
     display: flex;
     justify-content: space-between;
+    font-family: var(--fontFamily) !important;
 }
 
 .HeadingText h6 {
@@ -53,6 +57,7 @@
 .PieGraphParent h2 {
     margin: 12px !important;
     font-size: 16px !important;
+    font-family: var(--fontFamily) !important;
 }
 
 .ProgressCircle {

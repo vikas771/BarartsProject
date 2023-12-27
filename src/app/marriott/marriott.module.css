@@ -1,0 +1,195 @@
+.MarriottParent {
+    background-color: rgba(248, 248, 248, 255);
+}
+
+/* First Carousel css start here */
+
+.FirstCarouselParent h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: var(--fontFamily) !important;
+}
+
+.FirstCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    margin-top: 10px;
+    width: 1220px;
+}
+
+
+.FirstParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.FirstImgSection {
+    margin: 5px;
+    position: relative;
+
+}
+
+.FirstImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    width: 1200px;
+    color: white;
+    border-radius: 10px;
+}
+
+.FirstCarouselNextBtn {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.FirstCarouselPrevBtn {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.iconBtnFirst {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+
+/* First Carousel css end here */
+
+/* Second Carousel css start here */
+
+
+.FirstCarouselParent {
+    border-color: aqua;
+}
+
+.FirstCarouselParent h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.SecondCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    margin-top: 10px;
+    width: 1220px;
+}
+
+
+.SecondParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.SecondImgSection {
+    margin: 5px;
+    position: relative;
+
+}
+
+.SecondImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    width: 520px;
+    height: 400px;
+    color: white;
+    border-radius: 10px;
+}
+
+.TextCode {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 255);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.LogoText {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    background-color: rgba(96, 96, 94, 255);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.SecondCarouselNextBtn {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.SecondCarouselPrev {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.iconBtnSecond {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+
+/* First Carousel css end here */
+
+/* Form section start here  */
+
+.FormSectionParent{
+    padding: 10px;
+    margin: auto;
+}
+
+.FormChildFirst{
+    padding: 10px;
+}
+
+.FormChildFirst{
+    background-color: rgba(255, 255, 255, 255);
+}
+
+.textSection h3{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.textSection p{
+    font-size: 14px;
+    padding: 10px;
+    width: 95%;
+    background-color: rgba(242, 242, 242, 255);
+    border-radius: 15px;
+}
+
+.FormChildSecond{
+    background-color: rgba(255, 255, 255, 255);
+}
+
+.textSectionSecond1{
+    background-color: red;
+}
+
+.textSectionSecond h3{
+    font-size: 14px;
+}
+
+.textSectionSecond p{
+    padding: 10px;
+    background-color: rgba(242, 242, 242, 255);
+}
+
+/* Form section end here  */

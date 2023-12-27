@@ -26,17 +26,26 @@ import WineBarIcon from '@mui/icons-material/WineBar';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import FeedIcon from '@mui/icons-material/Feed';
-
 import Collapse from '@mui/material/Collapse';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import ExpandLess from '@mui/icons-material/ExpandLess';
-import Wine from '../component/wines/page';
+import Wine from '../specs/wines/page';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
-import Spirits from '../component/spirits/page';
-import Cocktails from '../component/cocktails/page';
-import Specs from '../component/specs/page'
-import Dashboard from '../component/dashboard/page';
-
+import Spirits from '../specs/spirits/page';
+import Cocktails from '../specs/cocktails/page';
+import Specs from '../specs/page'
+import Dashboard from '../dashboard/page';
+import Beer from '../specs/beer/page';
+import Low from '../specs/low/page';
+import LocationCityIcon from '@mui/icons-material/LocationCity';
+import Marriott from '../marriott/page';
+import SettingsIcon from '@mui/icons-material/Settings';
+import Setting from '../setting/page';
+import Checklist from '../checklist/page';
+import FactCheckIcon from '@mui/icons-material/FactCheck';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import Library from '../library/page';
+import Courses from '../library/courses/page';
 
 const drawerWidth = 240;
 
@@ -110,10 +119,16 @@ export default function page() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [isDarkMode, setDarkMode] = useState(false);
   const [isCollapse, setIsCollapse] = useState(false);
+  const [isCollapselibrary, setIsCollapseLibrary] = useState(false);
+
 
 
   const handleCollapse = () => {
     setIsCollapse(!isCollapse);
+  };
+
+  const handleCollapseLibrary = () => {
+    setIsCollapseLibrary(!isCollapselibrary);
   };
 
   const handleDrawerOpen = () => {
@@ -141,10 +156,7 @@ export default function page() {
     setAnchorEl(null);
   };
 
-
-
   const opens = Boolean(anchorEl);
-
 
   return (
     <>
@@ -304,11 +316,11 @@ export default function page() {
                   <LocalBarIcon />
                 </ListItemIcon>
                 <ListItemText primary="Specs" sx={{ opacity: open ? 1 : 0 }} />
-                {isCollapse ? <ExpandMore /> : <ExpandLess />}
+                {isCollapse ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
             </ListItem>
-            <ListItem>
 
+            <ListItem>
               <Collapse in={isCollapse} timeout="auto">
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
@@ -381,7 +393,234 @@ export default function page() {
                     <ListItemText primary="Wine" sx={{ opacity: open ? 1 : 0 }} />
                   </ListItemButton>
                 </ListItem>
+
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Beer' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Beer')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Beer' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Beer" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
+
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Low' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Low')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Low' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Low" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
+
               </Collapse>
+            </ListItem>
+
+
+            <ListItem className={style.listItemParent} onClick={() => handleCollapseLibrary()}>
+              <ListItemButton
+                className={selectedTab === 'Library' ? `${style.SelectedTab}` : ''}
+                onClick={() => handleTabClick('Library')}
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  className={selectedTab === 'Library' ? `${style.SelectedTab}` : ''}
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <LocalLibraryIcon />
+                </ListItemIcon>
+                <ListItemText primary="Library" sx={{ opacity: open ? 1 : 0 }} />
+                {isCollapselibrary ? <ExpandLess /> : <ExpandMore />}
+              </ListItemButton>
+            </ListItem>
+
+            <ListItem>
+              <Collapse in={isCollapselibrary} timeout="auto">
+
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Courses' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Courses')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Courses' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Courses" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
+
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Spirits')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Spirits" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
+
+                <ListItem className={style.listItemParent}>
+                  <ListItemButton
+                    className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Wine')}
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? 'initial' : 'center',
+                      px: 2.5,
+                    }}
+                  >
+                    <ListItemIcon
+                      className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : 'auto',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <SubdirectoryArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Wine" sx={{ opacity: open ? 1 : 0 }} />
+                  </ListItemButton>
+                </ListItem>
+
+              </Collapse>
+            </ListItem>
+
+
+
+            <ListItem className={style.listItemParent}>
+              <ListItemButton
+                className={selectedTab === 'Checklist' ? `${style.SelectedTab}` : ''}
+                onClick={() => handleTabClick('Checklist')}
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  className={selectedTab === 'Checklist' ? `${style.SelectedTab}` : ''}
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <FactCheckIcon />
+                </ListItemIcon>
+                <ListItemText primary="Checklist" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+
+            <ListItem className={style.listItemParent}>
+              <ListItemButton
+                className={selectedTab === 'marriott' ? `${style.SelectedTab}` : ''}
+                onClick={() => handleTabClick('marriott')}
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  className={selectedTab === 'marriott' ? `${style.SelectedTab}` : ''}
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <LocationCityIcon />
+                </ListItemIcon>
+                <ListItemText primary="Marriott" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+
+            <ListItem className={style.listItemParent}>
+              <ListItemButton
+                className={selectedTab === 'Setting' ? `${style.SelectedTab}` : ''}
+                onClick={() => handleTabClick('Setting')}
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  className={selectedTab === 'Setting' ? `${style.SelectedTab}` : ''}
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <SettingsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Setting" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
             </ListItem>
 
           </List>
@@ -394,6 +633,13 @@ export default function page() {
           {selectedTab == "Cocktails" && <Cocktails />}
           {selectedTab == "Spirits" && <Spirits />}
           {selectedTab == "Wine" && <Wine />}
+          {selectedTab == "Beer" && <Beer />}
+          {selectedTab == "Low" && <Low />}
+          {selectedTab == "Library" && <Library />}
+          {selectedTab == "Courses" && <Courses />}
+          {selectedTab == "Checklist" && <Checklist />}
+          {selectedTab == "marriott" && <Marriott />}
+          {selectedTab == "Setting" && <Setting />}
         </Box>
       </Box>
     </>

@@ -1,0 +1,187 @@
+.libraryparent {
+    background-color: rgba(248, 248, 248, 255);
+}
+
+.headingSeach {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headingSeach h4 {
+    font-size: 20px !important;
+}
+
+.SeachInpput {
+    height: 40px !important;
+    width: 380px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 131, 65, 255);
+}
+
+/* First section start here  */
+
+.SecondParent {
+    background-color: rgba(248, 248, 248, 255);
+    margin-top: 5px;
+}
+
+.FlashcardParent {
+    background-color: rgba(255, 255, 255, 255);
+    /* height: 100% !important; */
+    border: 1px solid rgb(214 214 214);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.FlashcardParent h5 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.FlashcardParent p {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.Paper {
+    max-height: 300px !important;
+    overflow: auto !important;
+    margin-top: 30px !important;
+}
+
+.IconParent {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(246, 246, 246, 255);
+    background-color: rgba(255, 255, 255, 255);
+    padding: 5px;
+}
+
+.iconStyle {
+    background-color: rgba(242, 242, 242, 255) !important;
+    font-size: 34px !important;
+    color: rgb(223 223 223) !important;
+}
+
+.IconText {
+    margin-left: 20px;
+}
+
+.IconParent h6 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.IconParent p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.ListItem {
+    box-shadow: none !important;
+    border: none !important;
+    display: block !important;
+}
+
+.FirstCircle {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.progressbar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(rgba(255, 131, 65, 255) 54%, #A3B5A8 0);
+}
+
+.progressbar h6 {
+    position: absolute;
+    top: -9px;
+    font-size: 16px;
+    left: 30%;
+}
+
+
+/* First section end here  */
+
+
+/* first carousel start here of Cocktails */
+
+.Carousels {
+    padding: 20px;
+}
+
+.FirstCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    min-height: 420px !important;
+    width: 1230px !important;
+}
+
+.FirstCarousels h3 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.FirstParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.FirstImgSection {
+    height: 270px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.FirstImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    height: 201px;
+    width: 330px;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.FirstImgSection h3 {
+    margin-top: 3px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.FirstCarouselNextBtn {
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.FirstCarouselPrevBtn {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.iconBtnFirst {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+/* first carousel end  here of Cocktails */
+
+/* Second carousel start  here of Cocktails */
+
+/* Second carousel end  here of Cocktails */

@@ -1,21 +1,19 @@
-import React from 'react'
-import Style from './cocktail.module.css'
+import React from 'react';
+import Style from './beer.module.css';
 import LiquorIcon from '@mui/icons-material/Liquor';
-import { CocktailsImg } from '../imageArrary';
+import {  BeerDetails } from '../../component/imageArrary';
 
-
-const Cocktails = () => {
+const Beer = () => {
   return (
-    <>
-      <div className={Style.CocktailParent}>
+    <div className={Style.BeerParent}>
         <div className={Style.HeadSeachbar}>
-          <h3>Cocktails</h3>
+          <h3>Beer</h3>
           <div className={Style.SeachBar}>
             <input className={Style.SeachInpput} type="search" placeholder="Search" aria-label="Search" />
           </div>
         </div>
 
-        {CocktailsImg.map((item) => (
+        {BeerDetails.map((item) => (
           <div item={item.Url}>
             <div className={Style.mainParent}>
               <div>
@@ -27,15 +25,14 @@ const Cocktails = () => {
                 <div className={Style.TextArea}>
                   <h3>{item.pname}</h3>
                   <span><LiquorIcon className={Style.Icons} /> ABV :  {item.persentAlcohol} </span>
-                  <p>{item.paratext}</p>
+                  <p>{item.description}</p>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
-    </>
   )
 }
 
-export default Cocktails
+export default Beer

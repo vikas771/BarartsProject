@@ -1,0 +1,30 @@
+.CheckParent {
+    background-color: rgba(248, 248, 248, 255);
+    padding: 10px;
+}
+
+.CheckParent h3 {
+    font-size: 20px;
+}
+
+.FirstChild {
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+.TextParent {
+    background-color: rgba(247, 247, 247, 255) !important;
+}
+
+.IconParent {
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 0px !important;
+}
+
+.IconParent h5 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 16px !important;
+}

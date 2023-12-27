@@ -10,6 +10,7 @@
     --textColor: white;
     --buttonTextColor: #fff;
     --headingColor: rgba(90, 16, 11, 0.8);
+    --fontFamily: " font-family: 'Mulish', sans-serif;"
 }
 
 body {
@@ -17,6 +18,11 @@ body {
     color: #000; 
     margin: 0px !important;
     padding: 0px !important;
+    font-family: "'Mulish', sans-serif" !important;
+  }
+
+  **{
+    font-family: "'Mulish', sans-serif" !important;
   }
 
   body.darkMode {

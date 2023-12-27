@@ -1,13 +1,10 @@
 import React from 'react';
 import Style from './spirits.module.css'
 import { Grid } from '@mui/material';
-import { SpiritCategory } from '../imageArrary';
+import { SpiritCategory } from '../../component/imageArrary';
 
 const Spirits = () => {
 
-  const CompleteDetails = (id) =>{
-    console.log(id);
-  }
   return (
     <>
       <div className={Style.SpiritsSection}>
@@ -22,7 +19,7 @@ const Spirits = () => {
           <Grid container spacing={2} className={Style.GridParent}>
             {SpiritCategory.map((item) => (
               <Grid key={item.id} item xs={4} className={Style.TextImgSection}>
-                <Grid container spacing={2} className={Style.ImgtextParent} onClick={()=> CompleteDetails(item.id)}>
+                <Grid container spacing={2} className={Style.ImgtextParent}>
                   <Grid item xs={4} className={Style.ImgSection}>
                     <img src={item.Url} alt="not found" />
                   </Grid>
@@ -34,7 +31,6 @@ const Spirits = () => {
             ))}
           </Grid>
         </div>
-
       </div>
     </>
   )

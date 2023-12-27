@@ -1,0 +1,19 @@
+.SettingParent {
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 255);
+}
+
+.SettingParent h3 {
+    font-size: 20px;
+    font-family: var(--fontFamily) !important;
+}
+
+.ImgSection {
+    text-align: center;
+    height: 550px;
+}
+
+.ImgSection img {
+    height: 100%;
+    width: 50%;
+}
