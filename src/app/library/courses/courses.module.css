@@ -1,0 +1,132 @@
+.MarriottParent {
+    background-color: rgba(248, 248, 248, 255);
+}
+
+
+/* First Carousel css start here */
+
+.FirstCarouselParent h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: var(--fontFamily) !important;
+}
+
+.FirstCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    margin-top: 10px;
+    width: 1220px;
+}
+
+
+.FirstParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.FirstImgSection {
+    margin: 5px;
+    position: relative;
+
+}
+
+.FirstImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    width: 1205px;
+    color: white;
+    border-radius: 10px;
+}
+
+.FirstCarouselNextBtn {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.FirstCarouselPrevBtn {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.iconBtnFirst {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+
+/* First Carousel css end here */
+
+/* first carousel start here of Cocktails */
+
+.SecondCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    min-height: 350px !important;
+    width: 1230px !important;
+}
+
+.SecondCarousels h3 {
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.SecondParent {
+    padding: 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.SecondImgSection {
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.SecondImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    height: 201px;
+    width: 330px;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.SecondImgSection h3 {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 60%;
+}
+
+.SecondCarouselNextBtn {
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.SecondCarouselPrevBtn {
+    position: absolute;
+    top: 90%;
+    right: 3%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.iconBtnSecond {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+/* first carousel end  here of Cocktails */

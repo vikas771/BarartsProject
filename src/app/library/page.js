@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import Style from './library.module.css'
 import { Grid, List, ListItem, Paper } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
-import { Library, Quizzes } from '../component/imageArrary';
+import { Flashcards, Library, Quizzes } from '../component/imageArrary';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
@@ -24,7 +24,37 @@ const page = () => {
     firstBox.current.scrollLeft = firstBox.current.scrollLeft - width;
   };
 
-  // first carousel button end  here of Cocktails
+  // first carousel button end  here of Quizzes
+
+  // second carousel button start  here of Quizzes
+
+  const SecondCarouselNext = () => {
+    let width = secondBox.current.clientWidth;
+    secondBox.current.scrollLeft = secondBox.current.scrollLeft + width;
+  };
+
+  const SecondCarouselPrev = () => {
+    let width = secondBox.current.clientWidth;
+    secondBox.current.scrollLeft = secondBox.current.scrollLeft - width;
+  };
+
+  // second carousel button end  here of Quizzes
+
+  // third carousel button start  here of Flashcards
+
+  const ThirdCarouselNext = () => {
+    let width = thirdBox.current.clientWidth;
+    thirdBox.current.scrollLeft = thirdBox.current.scrollLeft + width;
+  };
+
+  const ThirdCarouselPrev = () => {
+    let width = thirdBox.current.clientWidth;
+    thirdBox.current.scrollLeft = thirdBox.current.scrollLeft - width;
+  };
+
+  // third carousel button end  here of Flashcards
+
+
 
   return (
     <>
@@ -245,7 +275,7 @@ const page = () => {
           <div className={Style.FirstParent} ref={firstBox}>
             {Library.map((item) => (
               <div key={item.Url} className={Style.FirstImgSection}>
-                <video controls width="330" height="210">
+                <video width="330" height="210">
                   <source src={item.Url} type="video/mp4" />
                 </video>
                 <h3>{item.pname}</h3>
@@ -263,25 +293,44 @@ const page = () => {
         {/* Quizzes or Second  carousel start  here  */}
 
 
-        <div className={Style.FirstCarousels}>
-          <h3>Flashcards</h3>
-          <div className={Style.FirstParent} ref={firstBox}>
+        <div className={Style.SecondCarousels}>
+          <h3>Quizzes</h3>
+          <div className={Style.SecondParent} ref={secondBox}>
             {Quizzes.map((item) => (
-              <div key={item.Url} className={Style.FirstImgSection}>
+              <div key={item.Url} className={Style.SecondImgSection}>
                 <img src={item.Url} alt='not find' />
                 <h3>{item.pname}</h3>
+                <p>{item.question} questions</p>
               </div>
             )
             )}
           </div>
-          <button className={Style.FirstCarouselNextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-          <button className={Style.FirstCarouselPrevBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+          <button className={Style.SecondCarouselNextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
+          <button className={Style.SecondCarouselPrevBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
         </div>
 
 
         {/* Quizzes or Second  carousel end  here  */}
 
+        {/* Flashcards  Second  carousel start  here  */}
 
+        <div className={Style.SecondCarousels}>
+          <h3>Flashcards</h3>
+          <div className={Style.SecondParent} ref={thirdBox}>
+            {Flashcards.map((item) => (
+              <div key={item.Url} className={Style.SecondImgSection}>
+                <img src={item.Url} alt='not find' />
+                <h3>{item.pname}</h3>
+                <p>{item.question} flashcards</p>
+              </div>
+            )
+            )}
+          </div>
+          <button className={Style.SecondCarouselNextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
+          <button className={Style.SecondCarouselPrevBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+        </div>
+
+        {/* Flashcards  Second  carousel end  here  */}
 
       </div>
     </>

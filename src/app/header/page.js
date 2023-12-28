@@ -1,51 +1,55 @@
 "use client"
+// Mui library
 import React, { useState } from 'react';
-import { styled, useTheme } from '@mui/material/styles';
+import List from '@mui/material/List';
 import Box from '@mui/material/Box';
+import Switch from '@mui/material/Switch';
+import Toolbar from '@mui/material/Toolbar';
+import Divider from '@mui/material/Divider';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
+import { styled } from '@mui/material/styles';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import GridViewIcon from '@mui/icons-material/GridView';
-import style from './header.module.css';
-import WidgetsIcon from '@mui/icons-material/Widgets';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import { Avatar, Popover, Typography } from '@mui/material';
-import LocalBarIcon from '@mui/icons-material/LocalBar';
-import CoffeeIcon from '@mui/icons-material/Coffee';
-import WineBarIcon from '@mui/icons-material/WineBar';
-import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import FeedIcon from '@mui/icons-material/Feed';
 import Collapse from '@mui/material/Collapse';
+import FeedIcon from '@mui/icons-material/Feed';
+import IconButton from '@mui/material/IconButton';
+import CoffeeIcon from '@mui/icons-material/Coffee';
+import CssBaseline from '@mui/material/CssBaseline';
+import WidgetsIcon from '@mui/icons-material/Widgets';
+import ListItemText from '@mui/material/ListItemText';
+import WineBarIcon from '@mui/icons-material/WineBar';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LocalBarIcon from '@mui/icons-material/LocalBar';
+import GridViewIcon from '@mui/icons-material/GridView';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import ExpandLess from '@mui/icons-material/ExpandLess';
-import Wine from '../specs/wines/page';
+import FactCheckIcon from '@mui/icons-material/FactCheck';
+import ListItemButton from '@mui/material/ListItemButton';
+import { Avatar, Popover, Typography } from '@mui/material';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import LocationCityIcon from '@mui/icons-material/LocationCity';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
+
+// custom component 
+import style from './header.module.css';
+import Library from '../library/page';
+import Courses from '../library/courses/page';
+import Flashcards from '../library/flashcards/page';
+import Quizzes from '../library/quizzes/page';
 import Spirits from '../specs/spirits/page';
 import Cocktails from '../specs/cocktails/page';
 import Specs from '../specs/page'
 import Dashboard from '../dashboard/page';
 import Beer from '../specs/beer/page';
 import Low from '../specs/low/page';
-import LocationCityIcon from '@mui/icons-material/LocationCity';
-import Marriott from '../marriott/page';
-import SettingsIcon from '@mui/icons-material/Settings';
+import Wine from '../specs/wines/page';
 import Setting from '../setting/page';
-import Checklist from '../checklist/page';
-import FactCheckIcon from '@mui/icons-material/FactCheck';
-import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
-import Library from '../library/page';
-import Courses from '../library/courses/page';
+import Marriott from '../marriott/page';
 
 const drawerWidth = 240;
 
@@ -500,8 +504,8 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
-                    onClick={() => handleTabClick('Spirits')}
+                    className={selectedTab === 'Flashcards' ? `${style.SelectedTab}` : ''} 
+                    onClick={() => handleTabClick('Flashcards')}
                     sx={{
                       minHeight: 48,
                       justifyContent: open ? 'initial' : 'center',
@@ -509,7 +513,7 @@ export default function page() {
                     }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
+                      className={selectedTab === 'Flashcards' ? `${style.SelectedTab}` : ''}
                       sx={{
                         minWidth: 0,
                         mr: open ? 3 : 'auto',
@@ -518,14 +522,14 @@ export default function page() {
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Spirits" sx={{ opacity: open ? 1 : 0 }} />
+                    <ListItemText primary="Flashcards" sx={{ opacity: open ? 1 : 0 }} />
                   </ListItemButton>
                 </ListItem>
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
-                    onClick={() => handleTabClick('Wine')}
+                    className={selectedTab === 'Quizzes' ? `${style.SelectedTab}` : ''}
+                    onClick={() => handleTabClick('Quizzes')}
                     sx={{
                       minHeight: 48,
                       justifyContent: open ? 'initial' : 'center',
@@ -533,7 +537,7 @@ export default function page() {
                     }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
+                      className={selectedTab === 'Quizzes' ? `${style.SelectedTab}` : ''}
                       sx={{
                         minWidth: 0,
                         mr: open ? 3 : 'auto',
@@ -542,7 +546,7 @@ export default function page() {
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Wine" sx={{ opacity: open ? 1 : 0 }} />
+                    <ListItemText primary="Quizzes" sx={{ opacity: open ? 1 : 0 }} />
                   </ListItemButton>
                 </ListItem>
 
@@ -635,9 +639,10 @@ export default function page() {
           {selectedTab == "Wine" && <Wine />}
           {selectedTab == "Beer" && <Beer />}
           {selectedTab == "Low" && <Low />}
-          {selectedTab == "Library" && <Library />}
+          {selectedTab == "Library" && <Library />} 
           {selectedTab == "Courses" && <Courses />}
-          {selectedTab == "Checklist" && <Checklist />}
+          {selectedTab == "Flashcards" && <Flashcards />} 
+          {selectedTab == "Quizzes" && <Quizzes />}
           {selectedTab == "marriott" && <Marriott />}
           {selectedTab == "Setting" && <Setting />}
         </Box>

@@ -1,0 +1,75 @@
+.FlashcardsParent{
+    background-color: rgba(248, 248, 248, 255);
+}
+
+.FlashcardsParent h3{
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Second carousel start  here of Cocktails */
+
+.FirstCarousels {
+    background-color: rgba(244, 244, 244, 255);
+    position: relative;
+    min-height: 350px !important;
+    width: 1230px !important;
+}
+
+.FirstCarousels h3 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.FirstParent {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.FirstImgSection {
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.FirstImgSection img {
+    background-color: rgba(255, 255, 255, 255);
+    width: 200px;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.FirstImgSection h3 {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.FirstImgSection p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.FirstCarouselNextBtn {
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.FirstCarouselPrevBtn {
+    position: absolute;
+    top: 90%;
+    right: 3%;
+    border: 3px solid rgba(255, 131, 65, 255);
+}
+
+.iconBtnFirst {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+/* Second carousel end  here of Cocktails */
