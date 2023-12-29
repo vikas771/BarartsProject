@@ -1,21 +1,36 @@
+  
 import React from 'react'
-import Style from './cocktail.module.css'
+import Style from './cocktail.module.css';
+import common from '../../common.module.css'
 import LiquorIcon from '@mui/icons-material/Liquor';
 import { CocktailsImg } from '../../component/imageArrary';
-// import Link from 'next/link';
-
+import SearchIcon from '@mui/icons-material/Search';
+import { Grid } from '@mui/material';
+import Router from "next/router";
 
 
 const Cocktails = () => {
+  const Check = (id) =>{
+    console.log("id", id);
+    Router.push("/marriott");
+
+  }
   return (
     <>
       <div className={Style.CocktailParent}>
-        <div className={Style.HeadSeachbar}>
-          <h3>Cocktails</h3>
-          <div className={Style.SeachBar}>
-            <input className={Style.SeachInpput} type="search" placeholder="Search" aria-label="Search" />
-          </div>
-        </div>
+        <Grid container spacing={2}>
+          <Grid item xs={6} className={common.HeadingText}>
+            <h4>Cocktails</h4>
+          </Grid>
+          <Grid item xs={6} className={common.SearchParent}>
+            <input
+              type="text"
+              placeholder="Search Cocktails"
+              className={common.SearchInput}
+            />
+            <SearchIcon className={common.SearchIcon} />
+          </Grid>
+        </Grid>
 
         {CocktailsImg.map((item) => (
           <div item={item.id}>
@@ -30,6 +45,7 @@ const Cocktails = () => {
                   <h3>{item.pname}</h3>
                   <span><LiquorIcon className={Style.Icons} /> ABV :  {item.persentAlcohol} </span>
                   <p>{item.paratext}</p>
+                  <button onClick={()=>Check(item.id)}> click here </button>
                 </div>
               </div>
             </div>

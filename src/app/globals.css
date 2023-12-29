@@ -9,7 +9,8 @@
     --icon_selected_background_color : #f19b6c33;
     --textColor: white;
     --buttonTextColor: #fff;
-    --headingColor: rgba(90, 16, 11, 0.8);
+    --headingColor: #000000;
+    --subheadingColor : #505d6f;
     --fontFamily: " font-family: 'Mulish', sans-serif;"
 }
 
@@ -32,4 +33,8 @@ body {
 
   .dumy{
     background-color: red;
+  }
+
+  .css-zxdg2z{
+    padding: 0px !important;
   }

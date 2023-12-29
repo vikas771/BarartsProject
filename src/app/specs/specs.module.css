@@ -1,5 +1,6 @@
 .SpecsParent {
     background-color: rgba(248, 248, 248, 255);
+    padding: 10px;
 }
 
 .headingSeach {
@@ -12,12 +13,6 @@
     font-size: 20px !important;
 }
 
-.SeachInpput {
-    height: 40px !important;
-    width: 380px;
-    border-radius: 5px;
-    border: 2px solid rgba(255, 131, 65, 255);
-}
 
 .HeadingParetn {
     display: flex;

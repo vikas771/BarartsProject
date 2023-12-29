@@ -1,7 +1,10 @@
-import React, { useRef } from 'react'
-import Style from './flashcards.module.css'
+import React, { useRef } from 'react';
+import Style from './flashcards.module.css';
+import common from '../../common.module.css'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import SearchIcon from '@mui/icons-material/Search';
+import { Grid } from '@mui/material';
 import { BourbonHistory, CoreBeveragelLibrary, SignatureCocktails } from '@/app/component/imageArrary';
 
 const page = () => {
@@ -52,7 +55,20 @@ const page = () => {
     return (
         <>
             <div className={Style.FlashcardsParent}>
-                <h3>Flashcards</h3>
+
+                <Grid container spacing={2}>
+                    <Grid item xs={6} className={common.HeadingText}>
+                        <h4>Cocktails</h4>
+                    </Grid>
+                    <Grid item xs={6} className={common.SearchParent}>
+                        <input
+                            type="text"
+                            placeholder="Search Cocktails"
+                            className={common.SearchInput}
+                        />
+                        <SearchIcon className={common.SearchIcon} />
+                    </Grid>
+                </Grid>
 
                 {/* Bourbon History or First  carousel start  here  */}
 

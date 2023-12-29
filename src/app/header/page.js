@@ -15,6 +15,7 @@ import FeedIcon from '@mui/icons-material/Feed';
 import IconButton from '@mui/material/IconButton';
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import CssBaseline from '@mui/material/CssBaseline';
+import SearchIcon from '@mui/icons-material/Search';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import ListItemText from '@mui/material/ListItemText';
 import WineBarIcon from '@mui/icons-material/WineBar';
@@ -37,6 +38,7 @@ import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRig
 
 // custom component 
 import style from './header.module.css';
+import common from '../common.module.css'
 import Library from '../library/page';
 import Courses from '../library/courses/page';
 import Flashcards from '../library/flashcards/page';
@@ -182,10 +184,16 @@ export default function page() {
               <WidgetsIcon />
             </IconButton>
 
-            <div>
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <div style={{ marginRight: 'auto', position: 'relative' }}>
+              <input
+                type="text"
+                placeholder="Search"
+                className={style.SearchInput}
+              />
+              <SearchIcon className={style.SearchIcon}/>
             </div>
 
+         
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 
@@ -504,7 +512,7 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Flashcards' ? `${style.SelectedTab}` : ''} 
+                    className={selectedTab === 'Flashcards' ? `${style.SelectedTab}` : ''}
                     onClick={() => handleTabClick('Flashcards')}
                     sx={{
                       minHeight: 48,
@@ -639,9 +647,9 @@ export default function page() {
           {selectedTab == "Wine" && <Wine />}
           {selectedTab == "Beer" && <Beer />}
           {selectedTab == "Low" && <Low />}
-          {selectedTab == "Library" && <Library />} 
+          {selectedTab == "Library" && <Library />}
           {selectedTab == "Courses" && <Courses />}
-          {selectedTab == "Flashcards" && <Flashcards />} 
+          {selectedTab == "Flashcards" && <Flashcards />}
           {selectedTab == "Quizzes" && <Quizzes />}
           {selectedTab == "marriott" && <Marriott />}
           {selectedTab == "Setting" && <Setting />}

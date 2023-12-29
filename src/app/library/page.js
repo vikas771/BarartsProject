@@ -1,11 +1,12 @@
-import React, { useRef } from 'react'
-import Style from './library.module.css'
+import React, { useRef } from 'react';
+import Style from './library.module.css';
+import common from '../common.module.css'
 import { Grid, List, ListItem, Paper } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
 import { Flashcards, Library, Quizzes } from '../component/imageArrary';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-
+import SearchIcon from '@mui/icons-material/Search';
 
 const page = () => {
   const firstBox = useRef(null);
@@ -54,17 +55,24 @@ const page = () => {
 
   // third carousel button end  here of Flashcards
 
-
-
   return (
     <>
       <div className={Style.libraryparent}>
-        <div className={Style.headingSeach}>
-          <h4>Library</h4>
-          <div>
-            <input className={Style.SeachInpput} type="search" placeholder="Search" aria-label="Search" />
-          </div>
-        </div>
+
+        <Grid container spacing={2}>
+          <Grid item xs={6} className={common.HeadingText}>
+            <h4>Library</h4>
+          </Grid>
+          <Grid item xs={6} className={common.SearchParent}>
+            <input
+              type="text"
+              placeholder="Search Cocktails"
+              className={common.SearchInput}
+            />
+            <SearchIcon className={common.SearchIcon} />
+          </Grid>
+        </Grid>
+
 
         <div className={Style.SecondParent}>
           <Grid container spacing={1}>

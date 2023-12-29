@@ -1,8 +1,11 @@
 import React, { useRef } from 'react'
-import Style from './quizzes.module.css'
+import Style from './quizzes.module.css';
+import common from '../../common.module.css'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { BourbonHistory, CoreBeveragelLibrary, QuizzesBourbonHistory, QuizzesCoreBeverage, SignatureCocktails } from '@/app/component/imageArrary';
+import SearchIcon from '@mui/icons-material/Search';
+import { Grid } from '@mui/material';
+import { QuizzesBourbonHistory, QuizzesCoreBeverage, SignatureCocktails } from '@/app/component/imageArrary';
 
 const page = () => {
     const firstBox = useRef(null);
@@ -53,8 +56,20 @@ const page = () => {
     return (
         <>
             <div className={Style.FlashcardsParent}>
-                <h3>Quizzes</h3>
 
+                <Grid container spacing={2}>
+                    <Grid item xs={6} className={common.HeadingText}>
+                        <h4>Quizzes</h4>
+                    </Grid>
+                    <Grid item xs={6} className={common.SearchParent}>
+                        <input
+                            type="text"
+                            placeholder="Search Cocktails"
+                            className={common.SearchInput}
+                        />
+                        <SearchIcon className={common.SearchIcon} />
+                    </Grid>
+                </Grid>
                 {/* Bourbon History or First  carousel start  here  */}
 
                 <div className={Style.FirstCarousels}>

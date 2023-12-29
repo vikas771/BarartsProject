@@ -1,23 +1,8 @@
 .libraryparent {
     background-color: rgba(248, 248, 248, 255);
+    padding: 5px;
 }
 
-.headingSeach {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.headingSeach h4 {
-    font-size: 20px !important;
-}
-
-.SeachInpput {
-    height: 40px !important;
-    width: 380px;
-    border-radius: 5px;
-    border: 2px solid rgba(255, 131, 65, 255);
-}
 
 /* First section start here  */
 
@@ -219,7 +204,7 @@
     margin-bottom: 0px;
 }
 
-.SecondImgSection p{
+.SecondImgSection p {
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 10px;

@@ -1,24 +1,42 @@
-.DashboardParent {
+.DashboardSection {
+    padding: 10px;
     background-color: rgba(248, 248, 248, 255);
-    font-family: var(--fontFamily) !important;
 }
 
-.DashboardParent h2 {
+/* common css for headading and subheading start here  */
+
+.HeadingStyleText h4{
+    font-size: 16px;
+    margin: 12px;
+    color: var(--headingColor);
+}
+
+.HeadingStyleText p{
+    font-size: 14px;
+    margin: 12px;
+    color: var(--subheadingColor);
+}
+
+/* common css for headading and subheading end here  */
+
+/* first section start here  */
+.FirstParent h2 {
+    margin: 5px !important;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     font-size: 20px;
-    font-family: var(--fontFamily) !important;
+    color: var(--headingColor);
 }
 
-.DashboardParent p {
+.FirstParent p {
+    margin: 10px !important;
     margin-top: 0px !important;
     font-size: 14px;
-    font-family: var(--fontFamily) !important;
+    color: var(--subheadingColor);
 }
 
 .GraphParent {
     background-color: rgba(255, 255, 255, 255);
-    border: 1px solid rgb(214 214 214);
     border-radius: 10px;
     padding: 5px;
 }
@@ -26,7 +44,6 @@
 .HeadingText {
     display: flex;
     justify-content: space-between;
-    font-family: var(--fontFamily) !important;
 }
 
 .HeadingText h6 {
@@ -34,6 +51,7 @@
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: #697077;
 }
 
 .graphImg {
@@ -54,18 +72,9 @@
     padding: 5px;
 }
 
-.PieGraphParent h2 {
-    margin: 12px !important;
-    font-size: 16px !important;
-    font-family: var(--fontFamily) !important;
-}
-
-.ProgressCircle {
-    height: 150px !important;
-    width: 150px !important;
-    transform: rotate(-275deg) !important;
-    border: 2px solid rgba(221, 225, 230, 255);
-    border-radius: 50%;
+.StatusParent {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -75,25 +84,33 @@
 }
 
 .ProgressBarChild {
-    text-align: center;
     margin-top: 30px;
 }
 
-.ProgressStatus{
+.ProgressStatus {
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    color: rgb(60 169 7);
     background:
-        radial-gradient(closest-side, white 60%, transparent 60% 100%),
+        radial-gradient(closest-side, white 70%, transparent 60% 100%),
         conic-gradient(rgb(60 169 7) 68%, rgba(221, 225, 230, 255) 0);
 }
 
-.ProgressStatus h6{
+.ProgressStatus h6 {
     position: absolute;
-    top: 7px;
-    font-size: 30px;
-    left: 35%;
+    font-size: 1.125rem;
+    top: 17%;
+    left: 42%;
+}
+
+.ProgressStatus p {
+    position: absolute;
+    font-size: 1.125rem;
+    top: 50%;
+    left: 30%;
+    color: rgb(60 169 7);
 }
 
 .endSection {
@@ -121,7 +138,6 @@
     background-color: rgba(221, 225, 230, 255);
     border-radius: 4px;
     margin-right: 10px;
-
 }
 
 .Progress {
@@ -130,11 +146,6 @@
     border: 1px solid rgb(214 214 214);
     border-radius: 10px;
     padding: 5px;
-}
-
-.Progress h2 {
-    margin: 12px !important;
-    font-size: 16px !important;
 }
 
 .BoxesParent {
@@ -170,36 +181,60 @@
     margin-right: 5px;
 }
 
+/* first section end here  */
+
+/* second section start her  */
 
 .SecondParent {
-    background-color: rgba(248, 248, 248, 255);
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .FlashcardParent {
     background-color: rgba(255, 255, 255, 255);
-    /* height: 100% !important; */
     border: 1px solid rgb(214 214 214);
     border-radius: 10px;
     padding: 15px;
 }
 
-.FlashcardParent h5 {
+.FirstCircle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressbar {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(rgba(255, 131, 65, 255) 54%, #A3B5A8 0);
+}
+
+.progressbar p {
     font-size: 16px;
-    margin-bottom: 6px;
+    color: var(--headingColor);
 }
 
-.FlashcardParent p {
-    font-size: 14px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.Paper {
-    max-height: 300px !important;
-    overflow: auto !important;
-    margin-top: 30px !important;
-}
+.scrollContainer {
+    height: 330px;
+    overflow-y: auto; 
+    position: relative;
+  }
+  
+.scrollContainer::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .scrollContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 131, 65, 255);
+    border: none; 
+  }
+  
+  .scrollContainer::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
 
 .IconParent {
     display: flex;
@@ -237,27 +272,5 @@
     display: block !important;
 }
 
-.FirstCircle {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.progressbar {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background:
-        radial-gradient(closest-side, white 79%, transparent 80% 100%),
-        conic-gradient(rgba(255, 131, 65, 255) 54%, #A3B5A8 0);
-}
-
-.progressbar h6{
-    position: absolute;
-    top: -9px;
-    font-size: 16px;
-    left: 30%;
-}
-
+/* second section end here  */
 

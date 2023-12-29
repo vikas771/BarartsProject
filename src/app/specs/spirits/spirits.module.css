@@ -1,25 +1,6 @@
 .SpiritsSection{
     background-color: rgba(248, 248, 248, 255);
 }
-.HeadSeachbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.HeadSeachbar h3 {
-    font-size: 20px;
-}
-
-.SeachBar {
-    border-radius: 5px;
-    border: 2px solid rgba(255, 131, 65, 255);
-}
-
-.SeachInpput {
-    width: 220px;
-    padding: 10px;
-}
 
 .ImgtextParent{
     background-color: rgba(255, 255, 255, 255) !important;

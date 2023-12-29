@@ -1,47 +1,59 @@
-
-.appBar{
+.appBar {
   background-color: var(--navbar-background-color) !important;
   color: black !important;
 }
 
-.logoImg{
+.logoImg {
   width: 65%;
   height: 40px;
 }
 
-.listItemParent{
-  /* display: block !important; */
+.listItemParent {
   padding: 0px !important;
 }
 
-.headerLogo{
+.headerLogo {
   justify-content: space-between !important;
-  /* min-height: auto !important; */
 }
 
-.SelectedTab{
+.SelectedTab {
   background-color: var(--icon_selected_background_color) !important;
   color: var(--icon_selected_color_navbar) !important;
 }
 
 
-.LogoColor{
+.LogoColor {
   color: var(--icon_logo_color_navbar) !important;
 }
 
-.notificationText{
+.notificationText {
   display: flex;
   align-items: center;
-  padding: 10px ;
+  padding: 10px;
 }
 
-.notificationIcon{
+.notificationIcon {
   margin-right: 8px !important;
 }
-.darkMode{
+
+.darkMode {
   background-color: red;
 }
 
-.demm{
-  /* left: 775px !important; */
+
+.SearchInput {
+  border: none;
+  outline: none;
+  padding: 8px 30px 8px 10px;
+  width: 240px;
+  background-color: rgba(242, 242, 242, 255);
+  border-radius: 10px;
+}
+
+.SearchIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
 }

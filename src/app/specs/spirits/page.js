@@ -1,19 +1,29 @@
 import React from 'react';
-import Style from './spirits.module.css'
+import Style from './spirits.module.css';
+import common from '../../common.module.css'
 import { Grid } from '@mui/material';
 import { SpiritCategory } from '../../component/imageArrary';
+import SearchIcon from '@mui/icons-material/Search';
 
 const Spirits = () => {
 
   return (
     <>
       <div className={Style.SpiritsSection}>
-        <div className={Style.HeadSeachbar}>
-          <h3>Spirit Category</h3>
-          <div className={Style.SeachBar}>
-            <input className={Style.SeachInpput} type="search" placeholder="Search" aria-label="Search" />
-          </div>
-        </div>
+
+        <Grid container spacing={2}>
+          <Grid item xs={6} className={common.HeadingText}>
+            <h4>Spirit Category</h4>
+          </Grid>
+          <Grid item xs={6} className={common.SearchParent}>
+            <input
+              type="text"
+              placeholder="Search categories"
+              className={common.SearchInput}
+            />
+            <SearchIcon className={common.SearchIcon} />
+          </Grid>
+        </Grid>
 
         <div>
           <Grid container spacing={2} className={Style.GridParent}>

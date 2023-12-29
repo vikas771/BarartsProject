@@ -1,10 +1,14 @@
 "use client"
 
-import React, { useRef } from 'react'
-import Style from './specs.module.css'
+import React, { useRef } from 'react';
+import Style from './specs.module.css';
+import common from '../common.module.css'
 import { CocktailsImg, CoreBeverage, EventPlacement } from '../component/imageArrary'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import SearchIcon from '@mui/icons-material/Search';
+import { Grid } from '@mui/material';
+
 
 const Specs = () => {
 
@@ -57,12 +61,20 @@ const Specs = () => {
     return (
         <>
             <div className={Style.SpecsParent}>
-                <div className={Style.headingSeach}>
-                    <h4>Specs</h4>
-                    <div>
-                        <input className={Style.SeachInpput} type="search" placeholder="Search" aria-label="Search" />
-                    </div>
-                </div>
+
+                <Grid container spacing={2}>
+                    <Grid item xs={6} className={common.HeadingText}>
+                        <h4>Specs</h4>
+                    </Grid>
+                    <Grid item xs={6}  className={common.SearchParent}>
+                            <input
+                                type="text"
+                                placeholder="Search Categories"
+                                className={common.SearchInput}
+                            />
+                            <SearchIcon className={common.SearchIcon} />
+                    </Grid>
+                </Grid>
 
                 <div className={Style.FirstCarousel}>
 
@@ -71,7 +83,6 @@ const Specs = () => {
                         {/* first carousel start  here of Cocktails  */}
 
                         <div className={Style.FirstCarousels}>
-                            {/* <h3>Cocktails</h3> */}
                             <div className={Style.HeadingParetn}>
                                 <div>
                                     <h4>Cocktails</h4>
