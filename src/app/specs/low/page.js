@@ -1,6 +1,7 @@
 import React from 'react';
 import Style from './low.module.css';
-import common from '../../common.module.css'
+import common from '../../common.module.css';
+import BoxexCss from '../../style/twobox.module.css'
 import { LowNoABV } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
 import { Grid } from '@mui/material';
@@ -25,14 +26,14 @@ const Low = () => {
 
       {LowNoABV.map((item) => (
         <div item={item.Url}>
-          <div className={Style.mainParent}>
+          <div className={BoxexCss.BoxParent}>
             <div>
-              <div className={Style.imgSection}>
+              <div className={BoxexCss.ImgParent}>
                 <img src={item.Url} alt='not found' />
               </div>
             </div>
             <div>
-              <div className={Style.TextArea}>
+              <div className={BoxexCss.TextAreaParent}>
                 <h3>{item.pname}</h3>
                 <p>{item.description}</p>
               </div>

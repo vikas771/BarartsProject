@@ -1,0 +1,22 @@
+.PreviousBtn{
+    border: 2px solid rgba(255, 131, 65, 255);
+    color: rgba(255, 131, 65, 255) !important;
+    font-size: 15px !important;
+    position: absolute;
+    top: 90%;
+    right: 4%;
+}
+
+.NextBtn{
+    border: 2px solid rgba(255, 131, 65, 255);
+    color: rgba(255, 131, 65, 255) !important;
+    font-size: 15px !important;
+    position: absolute;
+    top: 90%;
+    right: 1%;
+}
+
+.PreAndNextIcon{
+    font-size: 15px !important;
+    margin-top: -3px;
+}

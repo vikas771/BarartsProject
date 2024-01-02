@@ -101,7 +101,7 @@
 .ProgressStatus h6 {
     position: absolute;
     font-size: 1.125rem;
-    top: 17%;
+    top: 39%;
     left: 42%;
 }
 
@@ -109,7 +109,7 @@
     position: absolute;
     font-size: 1.125rem;
     top: 50%;
-    left: 30%;
+    left: 25%;
     color: rgb(60 169 7);
 }
 

@@ -1,8 +1,7 @@
 .libraryparent {
     background-color: rgba(248, 248, 248, 255);
-    padding: 5px;
+    padding: 10px;
 }
-
 
 /* First section start here  */
 
@@ -29,11 +28,24 @@
     margin-top: 0px;
 }
 
-.Paper {
-    max-height: 300px !important;
-    overflow: auto !important;
-    margin-top: 30px !important;
-}
+.scrollContainer {
+    height: 330px;
+    overflow-y: auto; 
+    position: relative;
+  }
+  
+.scrollContainer::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .scrollContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 131, 65, 255);
+    border: none; 
+  }
+  
+  .scrollContainer::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
 
 .IconParent {
     display: flex;
@@ -79,8 +91,8 @@
 
 .progressbar {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background:
         radial-gradient(closest-side, white 79%, transparent 80% 100%),
@@ -89,14 +101,12 @@
 
 .progressbar h6 {
     position: absolute;
-    top: -9px;
     font-size: 16px;
-    left: 30%;
+    top: 13px;
+    left: 20%;
 }
 
-
 /* First section end here  */
-
 
 /* first carousel start here of Cocktails */
 
@@ -104,7 +114,7 @@
     background-color: rgba(244, 244, 244, 255);
     position: relative;
     min-height: 350px !important;
-    width: 1230px !important;
+    width: 1250px !important;
 }
 
 .FirstCarousels h3 {
@@ -142,25 +152,6 @@
     top: 60%;
 }
 
-.FirstCarouselNextBtn {
-    position: absolute;
-    top: 90%;
-    right: 0%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.FirstCarouselPrevBtn {
-    position: absolute;
-    top: 90%;
-    right: 3%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.iconBtnFirst {
-    font-size: 15px !important;
-    margin-top: 5px;
-}
-
 /* first carousel end  here of Cocktails */
 
 /* Second carousel start  here of Cocktails */
@@ -169,7 +160,7 @@
     background-color: rgba(244, 244, 244, 255);
     position: relative;
     min-height: 350px !important;
-    width: 1230px !important;
+    width: 1250px !important;
 }
 
 .SecondCarousels h3 {
@@ -208,25 +199,6 @@
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 10px;
-}
-
-.SecondCarouselNextBtn {
-    position: absolute;
-    top: 90%;
-    right: 0%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.SecondCarouselPrevBtn {
-    position: absolute;
-    top: 90%;
-    right: 3%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.iconBtnFirst {
-    font-size: 15px !important;
-    margin-top: 5px;
 }
 
 /* Second carousel end  here of Cocktails */

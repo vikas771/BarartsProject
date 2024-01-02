@@ -38,7 +38,6 @@ import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRig
 
 // custom component 
 import style from './header.module.css';
-import common from '../common.module.css'
 import Library from '../library/page';
 import Courses from '../library/courses/page';
 import Flashcards from '../library/flashcards/page';

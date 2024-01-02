@@ -1,6 +1,7 @@
 import React from 'react';
 import Style from './beer.module.css';
-import common from '../../common.module.css'
+import common from '../../common.module.css';
+import BoxexCss from '../../style/twobox.module.css'
 import LiquorIcon from '@mui/icons-material/Liquor';
 import {  BeerDetails } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
@@ -26,16 +27,16 @@ const Beer = () => {
 
         {BeerDetails.map((item) => (
           <div item={item.Url}>
-            <div className={Style.mainParent}>
+            <div className={BoxexCss.BoxParent}>
               <div>
-                <div className={Style.imgSection}>
+                <div className={BoxexCss.ImgParent}>
                   <img src={item.Url} alt='not found' />
                 </div>
               </div>
               <div>
-                <div className={Style.TextArea}>
+                <div className={BoxexCss.TextAreaParent}>
                   <h3>{item.pname}</h3>
-                  <span><LiquorIcon className={Style.Icons} /> ABV :  {item.persentAlcohol} </span>
+                  <span><LiquorIcon className={BoxexCss.IconStyle} /> ABV :  {item.persentAlcohol} </span>
                   <p>{item.description}</p>
                 </div>
               </div>

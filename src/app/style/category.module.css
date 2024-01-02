@@ -1,0 +1,34 @@
+.GridSection{
+    padding: 25px !important;
+}
+
+.TextImgSection{
+    padding: 10px;
+}
+
+.ImgTextChild{
+    background-color: rgba(255, 255, 255, 255);
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px ;
+}
+
+.ImgSection img{
+    border-radius: 10px;
+    margin-top: -5px;
+    width: 100%;
+    height: 100%;
+}
+
+.TextHeading {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextHeading h4{
+    color: rgba(255, 134, 69, 255);
+    font-size: 16px;
+}

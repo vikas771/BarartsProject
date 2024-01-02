@@ -1,6 +1,7 @@
 import React from 'react';
 import Style from './spirits.module.css';
-import common from '../../common.module.css'
+import common from '../../common.module.css';
+import category from '../../style/category.module.css'
 import { Grid } from '@mui/material';
 import { SpiritCategory } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
@@ -26,14 +27,14 @@ const Spirits = () => {
         </Grid>
 
         <div>
-          <Grid container spacing={2} className={Style.GridParent}>
+          <Grid container spacing={2} className={category.GridSection}>
             {SpiritCategory.map((item) => (
-              <Grid key={item.id} item xs={4} className={Style.TextImgSection}>
-                <Grid container spacing={2} className={Style.ImgtextParent}>
-                  <Grid item xs={4} className={Style.ImgSection}>
+              <Grid key={item.id} item xs={4} className={category.TextImgSection}>
+                <Grid container spacing={2} className={category.ImgTextChild}>
+                  <Grid item xs={4} className={category.ImgSection}>
                     <img src={item.Url} alt="not found" />
                   </Grid>
-                  <Grid item xs={8} className={Style.TextHeading}>
+                  <Grid item xs={8} className={category.TextHeading}>
                     <h4>{item.pname}</h4>
                   </Grid>
                 </Grid>
@@ -41,6 +42,7 @@ const Spirits = () => {
             ))}
           </Grid>
         </div>
+
       </div>
     </>
   )

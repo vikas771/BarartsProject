@@ -1,16 +1,15 @@
-  
 import React from 'react'
 import Style from './cocktail.module.css';
-import common from '../../common.module.css'
+import common from '../../common.module.css';
+import BoxexCss from '../../style/twobox.module.css'
 import LiquorIcon from '@mui/icons-material/Liquor';
 import { CocktailsImg } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
 import { Grid } from '@mui/material';
 import Router from "next/router";
 
-
 const Cocktails = () => {
-  const Check = (id) =>{
+  const Check = (id) => {
     console.log("id", id);
     Router.push("/marriott");
 
@@ -34,18 +33,18 @@ const Cocktails = () => {
 
         {CocktailsImg.map((item) => (
           <div item={item.id}>
-            <div className={Style.mainParent}>
+            <div className={BoxexCss.BoxParent}>
               <div>
-                <div className={Style.imgSection}>
+                <div className={BoxexCss.ImgParent}>
                   <img src={item.Url} alt='not found' />
                 </div>
               </div>
               <div>
-                <div className={Style.TextArea}>
+                <div className={BoxexCss.TextAreaParent}>
                   <h3>{item.pname}</h3>
-                  <span><LiquorIcon className={Style.Icons} /> ABV :  {item.persentAlcohol} </span>
+                  <span><LiquorIcon className={BoxexCss.IconStyle} /> ABV :  {item.persentAlcohol} </span>
                   <p>{item.paratext}</p>
-                  <button onClick={()=>Check(item.id)}> click here </button>
+                  {/* <button onClick={() => Check(item.id)}> click here </button> */}
                 </div>
               </div>
             </div>

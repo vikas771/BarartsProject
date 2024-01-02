@@ -13,46 +13,37 @@
     font-size: 20px !important;
 }
 
-
 .HeadingParetn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* First Carousel css start here  */
-
-.FirstCarousel {
-    background-color: rergba(248, 248, 248, 255);
-    padding: 10px;
-    width: 1230px;
+.CarouselParent {
+    background-color: rgba(248, 248, 248, 255);
+    padding: 5px;
+    width: 1255px;
 }
-
-.FirstCarousel h4 {
-    margin-top: 5px !important;
-    font-size: 18px !important;
-}
-
 
 /* first carousel start here of Cocktails */
-
-.Carousels {
-    padding: 20px;
-}   
 
 .FirstCarousels {
     background-color: rgba(244, 244, 244, 255);
     position: relative;
-    min-height: 420px !important;
+    padding: 10px;
+    min-height: 310px !important;
 }
 
-.FirstCarousels h3 {
+.FirstCarousels h4 {
     font-size: 18px;
-    padding: 10px;
+}
+
+.FirstCarousels h5 {
+    font-size: 18px;
+    color: rgba(255, 131, 65, 255);
 }
 
 .FirstParent {
-    padding: 10px;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -60,7 +51,8 @@
 
 .FirstImgSection {
     text-align: center;
-    height: 270px;
+    min-height: 215px;
+    height: 219px;
     width: 225px;
     margin: 5px;
     background-color: white;
@@ -68,8 +60,7 @@
 }
 
 .FirstImgSection img {
-    background-color: rgba(255, 255, 255, 255);
-    height: 201px;
+    height: 160px;
     margin: 10px;
     color: white;
     border-radius: 10px;
@@ -82,23 +73,9 @@
     border-bottom-left-radius: 10px;
 }
 
-.FirstCarouselNextBtn {
-    position: absolute;
-    top: 90%;
-    right: 2%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.FirstCarouselPrevBtn {
-    position: absolute;
-    top: 90%;
-    right: 5%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.iconBtnFirst {
-    font-size: 15px !important;
-    margin-top: 5px;
+.FirstImgSection h3 {
+    font-size: 14px;
+    padding: 10px;
 }
 
 /* first carousel end  here of Cocktails */
@@ -108,60 +85,39 @@
 .SecondCarousels {
     background-color: rgba(244, 244, 244, 255);
     position: relative;
-    min-height: 415px !important;
+    min-height: 315px !important;
     margin-top: 10px;
+    padding: 10px;
 }
 
 .SecondCarousels h3 {
     font-size: 18px;
-    padding: 10px;
+    color: #000000;
 }
 
 .SecondParent {
-    padding: 10px;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 .SecondImgSection {
-    margin: 5px;
     position: relative;
+    width: 362px;
 }
 
 .SecondImgSection img {
-    background-color: rgba(255, 255, 255, 255);
     margin: 10px;
-    min-width: 420px;
-    color: white;
+    height: 90%;
     border-radius: 10px;
 }
 
 .SecondImgSection h3 {
     border-bottom-right-radius: 10px;
     position: absolute;
-    top: 70%;
-    left: 10px;
+    top: 80%;
+    left: 7%;
     color: white;
-}
-
-.SecondCarouselNextBtn {
-    position: absolute;
-    top: 90%;
-    right: 2%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.SecondCarouselPrevBtn {
-    position: absolute;
-    top: 90%;
-    right: 5%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.iconBtnSecond {
-    font-size: 15px !important;
-    margin-top: 5px;
 }
 
 /* Second carousel end here of Core Beverage */
@@ -171,33 +127,32 @@
 .ThirdCarousels {
     background-color: rgba(244, 244, 244, 255);
     position: relative;
-    min-height: 520px !important;
+    min-height: 435px !important;
     margin-top: 10px;
+    padding: 10px;
 }
 
 .ThirdCarousels h3 {
     font-size: 18px;
-    padding: 10px;
 }
 
 .ThirdParent {
-    padding: 10px;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
 }
 
 .ThirdImgSection {
-    margin: 5px;
     position: relative;
+    margin: 5px;
+    width: 230px;
+    height: 324px;
 }
 
 .ThirdImgSection img {
     background-color: rgba(255, 255, 255, 255);
-    margin: 10px;
-    min-width: 230px;
     color: white;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -205,28 +160,9 @@
     border-bottom-right-radius: 10px;
     font-size: 16px;
     position: absolute;
-    top: 78%;
-    left: 10px;
+    top: 87%;
+    left: 5%;
     color: white;
-}
-
-.ThirdCarouselNextBtn {
-    position: absolute;
-    top: 90%;
-    right: 2%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.ThirdCarouselPrevBtn {
-    position: absolute;
-    top: 90%;
-    right: 5%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.iconBtnThird {
-    font-size: 15px !important;
-    margin-top: 5px;
 }
 
 /* Third carousel end here of Core Beverage */

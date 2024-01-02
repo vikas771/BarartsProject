@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Style from './library.module.css';
-import common from '../common.module.css'
+import common from '../common.module.css';
+import carouselCss from '../style/carousel.module.css';
 import { Grid, List, ListItem, Paper } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
 import { Flashcards, Library, Quizzes } from '../component/imageArrary';
@@ -88,7 +89,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <Paper className={Style.Paper}>
+                <div className={Style.scrollContainer}>
                   <List >
                     <ListItem className={Style.ListItem}>
                       <div>
@@ -135,7 +136,7 @@ const page = () => {
                       </div>
                     </ListItem>
                   </List>
-                </Paper>
+                </div>
               </div>
 
             </Grid>
@@ -153,7 +154,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <Paper className={Style.Paper} >
+                <div className={Style.scrollContainer} >
                   <List >
                     <ListItem className={Style.ListItem}>
                       <div>
@@ -200,7 +201,7 @@ const page = () => {
                       </div>
                     </ListItem>
                   </List>
-                </Paper>
+                </div>
               </div>
             </Grid>
             <Grid item xs={4}>
@@ -216,7 +217,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <Paper className={Style.Paper}>
+                <div className={Style.scrollContainer}>
                   <List >
                     <ListItem className={Style.ListItem}>
                       <div>
@@ -270,7 +271,7 @@ const page = () => {
                       </div>
                     </ListItem>
                   </List>
-                </Paper>
+                </div>
               </div>
             </Grid>
           </Grid>
@@ -291,8 +292,8 @@ const page = () => {
             )
             )}
           </div>
-          <button className={Style.FirstCarouselNextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-          <button className={Style.FirstCarouselPrevBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+          <button className={carouselCss.NextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+          <button className={carouselCss.PreviousBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
         </div>
 
 
@@ -313,8 +314,8 @@ const page = () => {
             )
             )}
           </div>
-          <button className={Style.SecondCarouselNextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-          <button className={Style.SecondCarouselPrevBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+          <button className={carouselCss.NextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+          <button className={carouselCss.PreviousBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon}/></button>
         </div>
 
 
@@ -334,8 +335,8 @@ const page = () => {
             )
             )}
           </div>
-          <button className={Style.SecondCarouselNextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-          <button className={Style.SecondCarouselPrevBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+          <button className={carouselCss.NextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon}/></button>
+          <button className={carouselCss.PreviousBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon}/></button>
         </div>
 
         {/* Flashcards  Second  carousel end  here  */}
