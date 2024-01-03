@@ -1,5 +1,6 @@
 .MarriottParent {
     background-color: rgba(248, 248, 248, 255);
+    padding: 10px;
 }
 
 /* First Carousel css start here */
@@ -7,20 +8,17 @@
 .FirstCarouselParent h3 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 20px !important;
+    font-weight: 700 !important;
     font-family: var(--fontFamily) !important;
 }
 
 .FirstCarousels {
-    background-color: rgba(244, 244, 244, 255);
     position: relative;
-    margin-top: 10px;
-    width: 1220px;
+    width: 1250px;
 }
 
-
 .FirstParent {
-    padding: 10px;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -29,13 +27,11 @@
 .FirstImgSection {
     margin: 5px;
     position: relative;
-
 }
 
 .FirstImgSection img {
-    background-color: rgba(255, 255, 255, 255);
-    width: 1200px;
-    color: white;
+    width: 1235px;
+    height: 224px;
     border-radius: 10px;
 }
 
@@ -57,7 +53,8 @@
 
 .iconBtnFirst {
     font-size: 15px !important;
-    margin-top: 5px;
+    margin-top: -4px;
+    color: rgba(255, 131, 65, 255) !important;
 }
 
 
@@ -65,27 +62,13 @@
 
 /* Second Carousel css start here */
 
-
-.FirstCarouselParent {
-    border-color: aqua;
-}
-
-.FirstCarouselParent h3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 20px;
-}
-
 .SecondCarousels {
-    background-color: rgba(244, 244, 244, 255);
     position: relative;
     margin-top: 10px;
-    width: 1220px;
+    width: 1250px;
 }
 
-
 .SecondParent {
-    padding: 10px;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -99,8 +82,8 @@
 
 .SecondImgSection img {
     background-color: rgba(255, 255, 255, 255);
-    width: 520px;
-    height: 400px;
+    width: 550px;
+    height: 344px;
     color: white;
     border-radius: 10px;
 }
@@ -141,7 +124,8 @@
 
 .iconBtnSecond {
     font-size: 15px !important;
-    margin-top: 5px;
+    margin-top: -4px;
+    color: rgba(255, 131, 65, 255) !important;
 }
 
 
@@ -149,46 +133,47 @@
 
 /* Form section start here  */
 
-.FormSectionParent{
-    padding: 10px;
-    margin: auto;
+.FormSectionParent {
+    padding: 20px;
+    margin-top: 10px;
 }
 
-.FormChildFirst{
+.FormChildFirst {
     padding: 10px;
 }
 
-.FormChildFirst{
+.FormChildFirst {
     background-color: rgba(255, 255, 255, 255);
 }
 
-.textSection h3{
+.textSection h3 {
     font-size: 14px;
     margin-bottom: 0px;
+    font-weight: 600 !important;
+    margin: 4px;
 }
 
-.textSection p{
+.textSection p {
+    margin: 10px;
     font-size: 14px;
     padding: 10px;
-    width: 95%;
     background-color: rgba(242, 242, 242, 255);
     border-radius: 15px;
 }
 
-.FormChildSecond{
+.FormChildSecond {
     background-color: rgba(255, 255, 255, 255);
 }
 
-.textSectionSecond1{
-    background-color: red;
-}
 
-.textSectionSecond h3{
+.textSectionSecond h3 {
     font-size: 14px;
 }
 
-.textSectionSecond p{
+.textSectionSecond p {
     padding: 10px;
+    margin: 4px;
+    font-size: 14px !important;
     background-color: rgba(242, 242, 242, 255);
 }
 

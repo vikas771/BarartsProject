@@ -44,13 +44,14 @@ import Flashcards from '../library/flashcards/page';
 import Quizzes from '../library/quizzes/page';
 import Spirits from '../specs/spirits/page';
 import Cocktails from '../specs/cocktails/page';
-import Specs from '../specs/page'
+import Specs from '../specs/page';
 import Dashboard from '../dashboard/page';
 import Beer from '../specs/beer/page';
 import Low from '../specs/low/page';
 import Wine from '../specs/wines/page';
 import Setting from '../setting/page';
 import Marriott from '../marriott/page';
+import Checklist from '../checklist/page';
 
 const drawerWidth = 240;
 
@@ -306,7 +307,7 @@ export default function page() {
               </ListItemButton>
             </ListItem>
 
-            <ListItem className={style.listItemParent} onClick={() => handleCollapse()}>
+            {/* <ListItem className={style.listItemParent} onClick={() => handleCollapse()}>
               <ListItemButton
                 className={selectedTab === 'Specs' ? `${style.SelectedTab}` : ''}
                 onClick={() => handleTabClick('Specs')}
@@ -329,9 +330,9 @@ export default function page() {
                 <ListItemText primary="Specs" sx={{ opacity: open ? 1 : 0 }} />
                 {isCollapse ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
-            </ListItem>
+            </ListItem> */}
 
-            <ListItem>
+            {/* <ListItem>
               <Collapse in={isCollapse} timeout="auto">
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
@@ -454,10 +455,10 @@ export default function page() {
                 </ListItem>
 
               </Collapse>
-            </ListItem>
+            </ListItem> */}
 
 
-            <ListItem className={style.listItemParent} onClick={() => handleCollapseLibrary()}>
+            {/* <ListItem className={style.listItemParent} onClick={() => handleCollapseLibrary()}>
               <ListItemButton
                 className={selectedTab === 'Library' ? `${style.SelectedTab}` : ''}
                 onClick={() => handleTabClick('Library')}
@@ -480,9 +481,9 @@ export default function page() {
                 <ListItemText primary="Library" sx={{ opacity: open ? 1 : 0 }} />
                 {isCollapselibrary ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
-            </ListItem>
+            </ListItem> */}
 
-            <ListItem>
+            {/* <ListItem>
               <Collapse in={isCollapselibrary} timeout="auto">
 
                 <ListItem className={style.listItemParent}>
@@ -558,7 +559,7 @@ export default function page() {
                 </ListItem>
 
               </Collapse>
-            </ListItem>
+            </ListItem> */}
 
 
 
@@ -649,7 +650,8 @@ export default function page() {
           {selectedTab == "Library" && <Library />}
           {selectedTab == "Courses" && <Courses />}
           {selectedTab == "Flashcards" && <Flashcards />}
-          {selectedTab == "Quizzes" && <Quizzes />}
+          {selectedTab == "Quizzes" && <Quizzes />}  
+          {selectedTab == "Checklist" && <Checklist />} 
           {selectedTab == "marriott" && <Marriott />}
           {selectedTab == "Setting" && <Setting />}
         </Box>

@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef } from 'react';
 import Style from './flashcards.module.css';
 import common from '../../common.module.css';

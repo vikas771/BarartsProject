@@ -26,7 +26,7 @@ const Beer = () => {
         </Grid>
 
         {BeerDetails.map((item) => (
-          <div item={item.Url}>
+          <div key={item.id} item={item.Url}>
             <div className={BoxexCss.BoxParent}>
               <div>
                 <div className={BoxexCss.ImgParent}>

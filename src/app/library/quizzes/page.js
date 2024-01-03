@@ -1,6 +1,8 @@
+"use client"
 import React, { useRef } from 'react'
 import Style from './quizzes.module.css';
-import common from '../../common.module.css'
+import common from '../../common.module.css';
+import carouselCss from '../../style/carousel.module.css'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import SearchIcon from '@mui/icons-material/Search';
@@ -84,8 +86,8 @@ const page = () => {
                         )
                         )}
                     </div>
-                    <button className={Style.FirstCarouselNextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-                    <button className={Style.FirstCarouselPrevBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+                    <button className={carouselCss.NextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+                    <button className={carouselCss.PreviousBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
                 </div>
 
                 {/* Bourbon History or First  carousel end  here  */}
@@ -104,8 +106,8 @@ const page = () => {
                         )
                         )}
                     </div>
-                    <button className={Style.FirstCarouselNextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-                    <button className={Style.FirstCarouselPrevBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+                    <button className={carouselCss.NextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+                    <button className={carouselCss.PreviousBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
                 </div>
 
                 {/* Signature Cocktails or Second  carousel end  here  */}
@@ -124,8 +126,8 @@ const page = () => {
                         )
                         )}
                     </div>
-                    <button className={Style.FirstCarouselNextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-                    <button className={Style.FirstCarouselPrevBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+                    <button className={carouselCss.NextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+                    <button className={carouselCss.PreviousBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
                 </div>
 
                 {/* Core Beverage or Third  carousel end  here  */}

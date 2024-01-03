@@ -6,12 +6,10 @@ import LiquorIcon from '@mui/icons-material/Liquor';
 import { CocktailsImg } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
 import { Grid } from '@mui/material';
-import Router from "next/router";
 
 const Cocktails = () => {
   const Check = (id) => {
     console.log("id", id);
-    Router.push("/marriott");
 
   }
   return (
@@ -32,7 +30,7 @@ const Cocktails = () => {
         </Grid>
 
         {CocktailsImg.map((item) => (
-          <div item={item.id}>
+          <div key={item.id}>
             <div className={BoxexCss.BoxParent}>
               <div>
                 <div className={BoxexCss.ImgParent}>

@@ -1,26 +1,51 @@
 .CheckParent {
     background-color: rgba(248, 248, 248, 255);
-    padding: 10px;
+    padding: 12px;
 }
 
-
-.FirstChild {
-    padding: 10px;
-    background-color: #fff;
+.IconStyle{
+    color: rgba(231,231,231,255) !important;
 }
 
-.TextParent {
-    background-color: rgba(247, 247, 247, 255) !important;
+.FirstParent{
+    margin-top: 5px !important;
+    background-color: white;
+    padding: 5px;
 }
 
-.IconParent {
+.MainChild{
+    background-color: rgba(248, 248, 248, 255);
+    margin: auto;
+}
+
+.IconAndText{
     display: flex !important;
-    align-items: center !important;
-    padding-top: 0px !important;
+    padding: 10px;
 }
 
-.IconParent h5 {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    font-size: 16px !important;
+.IconAndText h5{
+    font-size: 16px;
+    margin-left: 10px;
 }
+
+.ProgressParent{
+    display: flex;
+    justify-content: space-between;
+}
+.ProgressParent p{
+    margin-bottom: 0px !important;
+}
+
+.ProgressParent span{
+    color: rgba(255,131,65,255);
+}
+
+.myProgressBar {
+    margin-bottom: 10px;
+  }
+
+  .Demoo{
+    background-color: rgba(231,231,231,255);
+    border-radius: 10px;
+    height: 10px;
+  }

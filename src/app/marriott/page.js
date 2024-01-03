@@ -108,16 +108,13 @@ const page = () => {
                                 <p>The Beverly Hills Marriott is a part of the Marriott International brand. Marriott is known for its commitment to quality, exceptional service, and a broad range of accommodations to meet various travel needs, from luxury to budget-conscious. Our brand emphasizes guest satisfaction, innovation in hospitality services, and a loyalty program that is highly regarded in the industry.</p>
                             </div>
 
-                             <div className={Style.textSectionSecond}>
+                            <div className={Style.textSectionSecond}>
                                 <h3>Property Details</h3>
                                 <p>A luxury hotel located in the prestigious Beverly Hills area, known for its prime location close to famous attractions like Rodeo Drive and the Hollywood Walk of Fame. Offering upscale amenities, including stylish rooms and suites, fine dining options, and comprehensive business and leisure facilities. It caters to both business and leisure travelers seeking a blend of comfort, convenience, and a touch of glamour in one of Los Angeles' most iconic neighborhoods.</p>
                             </div>
                         </Grid>
                     </Grid>
                 </div>
-
-
-
             </div>
         </>
     )

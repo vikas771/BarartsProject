@@ -29,6 +29,7 @@
 }
 
 .scrollContainer {
+    margin-top: 15px;
     height: 330px;
     overflow-y: auto; 
     position: relative;
