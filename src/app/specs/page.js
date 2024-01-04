@@ -147,9 +147,6 @@ const Specs = () => {
 
                 </div>
 
-                <div>
-                </div>
-
             </div>
         </>
     )

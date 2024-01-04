@@ -9,7 +9,23 @@
 }
 
 .listItemParent {
-  padding: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.listItemChild{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.ListButton{
+  min-height: 40px;
+  font-size: 16px !important;
+}
+
+.iconStyle{
+  min-width: 0px;
+  justify-content: 'center';
 }
 
 .headerLogo {
@@ -19,8 +35,9 @@
 .SelectedTab {
   background-color: var(--icon_selected_background_color) !important;
   color: var(--icon_selected_color_navbar) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
-
 
 .LogoColor {
   color: var(--icon_logo_color_navbar) !important;
@@ -39,7 +56,6 @@
 .darkMode {
   background-color: red;
 }
-
 
 .SearchInput {
   border: none;

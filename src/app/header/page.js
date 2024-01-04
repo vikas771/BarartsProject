@@ -190,10 +190,10 @@ export default function page() {
                 placeholder="Search"
                 className={style.SearchInput}
               />
-              <SearchIcon className={style.SearchIcon}/>
+              <SearchIcon className={style.SearchIcon} />
             </div>
 
-         
+
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 
@@ -285,21 +285,13 @@ export default function page() {
             {/* {['Dashboard', 'Specs', 'Library', 'Chechlists', 'Marriott', 'Setting', 'Logout'].map((text, index) => ( */}
             <ListItem className={style.listItemParent}>
               <ListItemButton
-                className={selectedTab === 'Dashboard' ? `${style.SelectedTab}` : ''}
+                className={`${selectedTab === 'Dashboard' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                 onClick={() => handleTabClick('Dashboard')}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
+                sx={{ justifyContent: open ? 'initial' : 'center' }}
               >
                 <ListItemIcon
-                  className={selectedTab === 'Dashboard' ? `${style.SelectedTab}` : ''}
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
+                  className={`${selectedTab === 'Dashboard' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                  sx={{ mr: open ? 3 : 'auto' }}
                 >
                   <GridViewIcon />
                 </ListItemIcon>
@@ -307,50 +299,34 @@ export default function page() {
               </ListItemButton>
             </ListItem>
 
-            {/* <ListItem className={style.listItemParent} onClick={() => handleCollapse()}>
+            <ListItem className={style.listItemParent} onClick={() => handleCollapse()}>
               <ListItemButton
-                className={selectedTab === 'Specs' ? `${style.SelectedTab}` : ''}
+                className={`${selectedTab === 'Specs' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                 onClick={() => handleTabClick('Specs')}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
+                sx={{ justifyContent: open ? 'initial' : 'center' }}
               >
                 <ListItemIcon
-                  className={selectedTab === 'Specs' ? `${style.SelectedTab}` : ''}
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
+                  className={`${selectedTab === 'Specs' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                  sx={{ mr: open ? 3 : 'auto' }}
                 >
                   <LocalBarIcon />
                 </ListItemIcon>
                 <ListItemText primary="Specs" sx={{ opacity: open ? 1 : 0 }} />
-                {isCollapse ? <ExpandLess /> : <ExpandMore />}
+                {open ? (isCollapse ? <ExpandLess /> : <ExpandMore />) : ''}
               </ListItemButton>
-            </ListItem> */}
+            </ListItem>
 
-            {/* <ListItem>
+            {open ? <ListItem>
               <Collapse in={isCollapse} timeout="auto">
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Cocktails' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Cocktails' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Cocktails')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Cocktails' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Cocktails' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
@@ -360,21 +336,13 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Spirits' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Spirits')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Spirits' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
@@ -384,21 +352,13 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Wine' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Wine')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Wine' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Wine' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
@@ -408,21 +368,13 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Beer' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Beer' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Beer')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Beer' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Beer' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
@@ -432,77 +384,50 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Low' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Low' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Low')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Low' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Low' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
                     <ListItemText primary="Low" sx={{ opacity: open ? 1 : 0 }} />
                   </ListItemButton>
                 </ListItem>
-
               </Collapse>
-            </ListItem> */}
+            </ListItem> : ''}
 
-
-            {/* <ListItem className={style.listItemParent} onClick={() => handleCollapseLibrary()}>
+            <ListItem className={style.listItemParent} onClick={() => handleCollapseLibrary()}>
               <ListItemButton
-                className={selectedTab === 'Library' ? `${style.SelectedTab}` : ''}
+                className={`${selectedTab === 'Library' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                 onClick={() => handleTabClick('Library')}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
+                sx={{ justifyContent: open ? 'initial' : 'center' }}
               >
                 <ListItemIcon
-                  className={selectedTab === 'Library' ? `${style.SelectedTab}` : ''}
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
+                  className={`${selectedTab === 'Library' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                  sx={{ mr: open ? 3 : 'auto' }}
                 >
                   <LocalLibraryIcon />
                 </ListItemIcon>
                 <ListItemText primary="Library" sx={{ opacity: open ? 1 : 0 }} />
-                {isCollapselibrary ? <ExpandLess /> : <ExpandMore />}
+                {open ? (isCollapselibrary ? <ExpandLess /> : <ExpandMore />) : ''}
               </ListItemButton>
-            </ListItem> */}
+            </ListItem>
 
-            {/* <ListItem>
+            {open ? <ListItem>
               <Collapse in={isCollapselibrary} timeout="auto">
-
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Courses' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Courses' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Courses')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Courses' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Courses' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
@@ -512,21 +437,13 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Flashcards' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Flashcards' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Flashcards')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Flashcards' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Flashcards' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
@@ -536,21 +453,13 @@ export default function page() {
 
                 <ListItem className={style.listItemParent}>
                   <ListItemButton
-                    className={selectedTab === 'Quizzes' ? `${style.SelectedTab}` : ''}
+                    className={`${selectedTab === 'Quizzes' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                     onClick={() => handleTabClick('Quizzes')}
-                    sx={{
-                      minHeight: 48,
-                      justifyContent: open ? 'initial' : 'center',
-                      px: 2.5,
-                    }}
+                    sx={{ justifyContent: open ? 'initial' : 'center' }}
                   >
                     <ListItemIcon
-                      className={selectedTab === 'Quizzes' ? `${style.SelectedTab}` : ''}
-                      sx={{
-                        minWidth: 0,
-                        mr: open ? 3 : 'auto',
-                        justifyContent: 'center',
-                      }}
+                      className={`${selectedTab === 'Quizzes' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                      sx={{ mr: open ? 3 : 'auto' }}
                     >
                       <SubdirectoryArrowRightIcon />
                     </ListItemIcon>
@@ -559,27 +468,17 @@ export default function page() {
                 </ListItem>
 
               </Collapse>
-            </ListItem> */}
-
-
+            </ListItem> : ''}
 
             <ListItem className={style.listItemParent}>
               <ListItemButton
-                className={selectedTab === 'Checklist' ? `${style.SelectedTab}` : ''}
+                className={`${selectedTab === 'Checklist' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                 onClick={() => handleTabClick('Checklist')}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
+                sx={{ justifyContent: open ? 'initial' : 'center' }}
               >
                 <ListItemIcon
-                  className={selectedTab === 'Checklist' ? `${style.SelectedTab}` : ''}
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
+                  className={`${selectedTab === 'Checklist' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                  sx={{ mr: open ? 3 : 'auto' }}
                 >
                   <FactCheckIcon />
                 </ListItemIcon>
@@ -589,21 +488,13 @@ export default function page() {
 
             <ListItem className={style.listItemParent}>
               <ListItemButton
-                className={selectedTab === 'marriott' ? `${style.SelectedTab}` : ''}
-                onClick={() => handleTabClick('marriott')}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
+                className={`${selectedTab === 'Marriott' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
+                onClick={() => handleTabClick('Marriott')}
+                sx={{ justifyContent: open ? 'initial' : 'center' }}
               >
                 <ListItemIcon
-                  className={selectedTab === 'marriott' ? `${style.SelectedTab}` : ''}
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
+                  className={`${selectedTab === 'Marriott' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                  sx={{ mr: open ? 3 : 'auto' }}
                 >
                   <LocationCityIcon />
                 </ListItemIcon>
@@ -613,21 +504,13 @@ export default function page() {
 
             <ListItem className={style.listItemParent}>
               <ListItemButton
-                className={selectedTab === 'Setting' ? `${style.SelectedTab}` : ''}
+                className={`${selectedTab === 'Setting' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
                 onClick={() => handleTabClick('Setting')}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
+                sx={{ justifyContent: open ? 'initial' : 'center' }}
               >
                 <ListItemIcon
-                  className={selectedTab === 'Setting' ? `${style.SelectedTab}` : ''}
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
+                  className={`${selectedTab === 'Setting' ? `${style.SelectedTab}` : ''} ${style.iconStyle}`}
+                  sx={{ mr: open ? 3 : 'auto' }}
                 >
                   <SettingsIcon />
                 </ListItemIcon>
@@ -650,9 +533,9 @@ export default function page() {
           {selectedTab == "Library" && <Library />}
           {selectedTab == "Courses" && <Courses />}
           {selectedTab == "Flashcards" && <Flashcards />}
-          {selectedTab == "Quizzes" && <Quizzes />}  
-          {selectedTab == "Checklist" && <Checklist />} 
-          {selectedTab == "marriott" && <Marriott />}
+          {selectedTab == "Quizzes" && <Quizzes />}
+          {selectedTab == "Checklist" && <Checklist />}
+          {selectedTab == "Marriott" && <Marriott />}
           {selectedTab == "Setting" && <Setting />}
         </Box>
       </Box>
