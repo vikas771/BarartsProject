@@ -121,7 +121,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 export default function page() {
   const [open, setOpen] = useState(true);
-  const [selectedTab, setSelectedTab] = useState('Dashboard');
+  const [selectedTab, setSelectedTab] = useState('');
   const [anchorEl, setAnchorEl] = useState(null);
   const [isDarkMode, setDarkMode] = useState(false);
   const [isCollapse, setIsCollapse] = useState(false);

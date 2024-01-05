@@ -166,3 +166,16 @@
 }
 
 /* Third carousel end here of Core Beverage */
+
+
+/* Media Query section start here  */
+
+
+@media screen and (max-width: 480px) {
+    .CarouselParent {
+      background-color: lightgreen;
+    }
+  }
+
+
+/* Media Query section ed here  */

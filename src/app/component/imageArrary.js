@@ -4,7 +4,56 @@ export const CocktailsImg = [
         pname: "Manhattan",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FManhattan.png&w=1920&q=75",
         persentAlcohol: " 50.00%",
-        paratext: "An easy way to remember the proper ratio of a Manhattan is the area code of Manhattan is 212: 2 whiskey, 1 sweet vermouth, 2 dashes angostura bitters"
+        paratext: "An easy way to remember the proper ratio of a Manhattan is the area code of Manhattan is 212: 2 whiskey, 1 sweet vermouth, 2 dashes angostura bitters",
+        VideoLink : "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
+        Ingredients: [
+            {
+                startText: "Rye whiskey (can be made with bourbon)",
+                endText : '2 oz'
+            },
+            {
+                startText: "Sweet Vermouth",
+                endText : '1 oz'
+            },
+            {
+                startText: "Angostura Bitters",
+                endText : '2 dashes'
+            },
+           
+        ],
+        Presentations: [
+            {
+                startText : "Ice",
+                endText : "N/A"
+            },
+            {
+                startText : "Glassware",
+                endText : "Coupe"
+            },
+            {
+                startText : "Garnish",
+                endText : "Pickled Filthy cherry"
+            },
+        ],
+        Methods : [
+            {
+                text : "1. Measure all ingredients to a mixing beaker"
+            },
+            {
+                text : "2. Add Ice and stirr 30 times to proper dilution"
+            },
+            {
+                text : "3. Strain into chilled coupe glass using a julep strainer"
+            },
+            {
+                text : "4. Garnish with a picked filthy black cherry"
+            }
+        ],
+            Detail : [
+                {
+                    description : "most popular theory is that the recipe was invented by Dr. Iain Marshall in the early 1880’s for a party by Lady Randolph Churchill, the mother of Winston Churchill Unfortunately the origins of the Manhattan cocktail remain inconclusive"
+                }
+            ]
     },
     {
         id: "2",
@@ -665,36 +714,36 @@ export const QuizzesCoreBeverage = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1702011184873-Wine%2520fruit%2520.png.webp&w=1920&q=75"
     },
     {
-        id : "6",
-        pname : "December Cocktails",
-        question : "5",
-        Url : "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1702010859465-Cocktails%2520updated%2520image.png.webp&w=1920&q=75"
+        id: "6",
+        pname: "December Cocktails",
+        question: "5",
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1702010859465-Cocktails%2520updated%2520image.png.webp&w=1920&q=75"
     }
 ]
 
 export const Courses = [
     {
-        id : "1",
+        id: "1",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1698819075399-1.png&w=1920&q=75"
     },
     {
-        id : "2",
+        id: "2",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1698819102116-2.png&w=1920&q=75"
     },
     {
-        id : "3",
+        id: "3",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1698819134274-3.png&w=1920&q=75"
     },
     {
-        id : "4",
+        id: "4",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1698819162177-4.png&w=1920&q=75"
     },
     {
-        id : "5",
+        id: "5",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1698819189845-5.png&w=1920&q=75"
     },
     {
-        id : "6",
+        id: "6",
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1698819213690-6.png&w=1920&q=75"
     },
 
@@ -733,7 +782,7 @@ export const CocktailsCouses = [
         pname: "Old Fashioned",
         Url: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+6+-+Old+Fashioned"
     },
-   
+
 ]
 
 export const HistoryCourses = [

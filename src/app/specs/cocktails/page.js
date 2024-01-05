@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Style from './cocktail.module.css';
 import common from '../../common.module.css';
@@ -6,11 +8,15 @@ import LiquorIcon from '@mui/icons-material/Liquor';
 import { CocktailsImg } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
 import { Grid } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 const Cocktails = () => {
-  const Check = (id) => {
-    console.log("id", id);
 
+  const Route = useRouter()
+
+  const Check = async (id) => {
+    console.log("id", id);
+    Route.push(`/specs/cocktails/${id}`)
   }
   return (
     <>
@@ -31,7 +37,7 @@ const Cocktails = () => {
 
         {CocktailsImg.map((item) => (
           <div key={item.id}>
-            <div className={BoxexCss.BoxParent}>
+            <div className={BoxexCss.BoxParent} onClick={() => Check(item.id)}>
               <div>
                 <div className={BoxexCss.ImgParent}>
                   <img src={item.Url} alt='not found' />
@@ -42,7 +48,6 @@ const Cocktails = () => {
                   <h3>{item.pname}</h3>
                   <span><LiquorIcon className={BoxexCss.IconStyle} /> ABV :  {item.persentAlcohol} </span>
                   <p>{item.paratext}</p>
-                  {/* <button onClick={() => Check(item.id)}> click here </button> */}
                 </div>
               </div>
             </div>
