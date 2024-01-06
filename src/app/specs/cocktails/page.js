@@ -11,10 +11,9 @@ import { Grid } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
 const Cocktails = () => {
-
   const Route = useRouter()
 
-  const Check = async (id) => {
+  const GetCompleteDetails = async (id) => {
     console.log("id", id);
     Route.push(`/specs/cocktails/${id}`)
   }
@@ -37,7 +36,7 @@ const Cocktails = () => {
 
         {CocktailsImg.map((item) => (
           <div key={item.id}>
-            <div className={BoxexCss.BoxParent} onClick={() => Check(item.id)}>
+            <div className={BoxexCss.BoxParent} onClick={() => GetCompleteDetails(item.id)}>
               <div>
                 <div className={BoxexCss.ImgParent}>
                   <img src={item.Url} alt='not found' />

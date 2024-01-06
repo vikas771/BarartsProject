@@ -5,55 +5,55 @@ export const CocktailsImg = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FManhattan.png&w=1920&q=75",
         persentAlcohol: " 50.00%",
         paratext: "An easy way to remember the proper ratio of a Manhattan is the area code of Manhattan is 212: 2 whiskey, 1 sweet vermouth, 2 dashes angostura bitters",
-        VideoLink : "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
+        VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
         Ingredients: [
             {
                 startText: "Rye whiskey (can be made with bourbon)",
-                endText : '2 oz'
+                endText: '2 oz'
             },
             {
                 startText: "Sweet Vermouth",
-                endText : '1 oz'
+                endText: '1 oz'
             },
             {
                 startText: "Angostura Bitters",
-                endText : '2 dashes'
+                endText: '2 dashes'
             },
-           
+
         ],
         Presentations: [
             {
-                startText : "Ice",
-                endText : "N/A"
+                startText: "Ice",
+                endText: "N/A"
             },
             {
-                startText : "Glassware",
-                endText : "Coupe"
+                startText: "Glassware",
+                endText: "Coupe"
             },
             {
-                startText : "Garnish",
-                endText : "Pickled Filthy cherry"
+                startText: "Garnish",
+                endText: "Pickled Filthy cherry"
             },
         ],
-        Methods : [
+        Methods: [
             {
-                text : "1. Measure all ingredients to a mixing beaker"
+                text: "1. Measure all ingredients to a mixing beaker"
             },
             {
-                text : "2. Add Ice and stirr 30 times to proper dilution"
+                text: "2. Add Ice and stirr 30 times to proper dilution"
             },
             {
-                text : "3. Strain into chilled coupe glass using a julep strainer"
+                text: "3. Strain into chilled coupe glass using a julep strainer"
             },
             {
-                text : "4. Garnish with a picked filthy black cherry"
+                text: "4. Garnish with a picked filthy black cherry"
             }
         ],
-            Detail : [
-                {
-                    description : "most popular theory is that the recipe was invented by Dr. Iain Marshall in the early 1880’s for a party by Lady Randolph Churchill, the mother of Winston Churchill Unfortunately the origins of the Manhattan cocktail remain inconclusive"
-                }
-            ]
+        Detail: [
+            {
+                description: "most popular theory is that the recipe was invented by Dr. Iain Marshall in the early 1880’s for a party by Lady Randolph Churchill, the mother of Winston Churchill Unfortunately the origins of the Manhattan cocktail remain inconclusive"
+            }
+        ]
     },
     {
         id: "2",
@@ -61,6 +61,56 @@ export const CocktailsImg = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FWhiskey%2BSour.png&w=1920&q=75",
         paratext: "The ratio used for a sour is 2:1:1 - 2 strong, 1 sweet, 1 sour",
         persentAlcohol: " 20.00%",
+        VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+2+-+Whiskey+Sour",
+        Ingredients: [
+            {
+                startText: "Bourbon",
+                endText: '2 oz'
+            },
+            {
+                startText: "Simple syrup 1:1",
+                endText: '1 oz'
+            },
+            {
+                startText: "Lemon juice",
+                endText: '1 oz'
+            },
+            {
+                startText: "egg white or vegan substitute",
+                endText: '1 unit'
+            },
+
+        ],
+        Presentations: [
+            {
+                startText: "Ice",
+                endText: "N/A"
+            },
+            {
+                startText: "Glassware",
+                endText: "Coupe"
+            },
+            {
+                startText: "Garnish",
+                endText: "Lemon twist, Filthy cherry"
+            },
+        ],
+        Methods: [
+            {
+                text: "1. Measure all ingredients and add to a cocktail shaker without ice"
+            },
+            {
+                text: "2. Dry shake without ice for 10 seconds to aerate and produce the foam"
+            },
+            {
+                text: "3. Add ice and shake for 10 seconds, strain into chilled coupe, garnish"
+            }
+        ],
+        Detail: [
+            {
+                description: "- Dry Shake: Is the process of shaking a cocktail without ice in order to give the cocktail a silky texture and not over diluting when using egg whites or egg white alternatives. After dry shaking add ice and shake to dilution and temperature - The egg white or egg white substitute in a cocktail adds a silky and foaming texture to the cocktail - The whiskey sour is a perfect cocktail for both bourbon enthusiast and new bourbon drinkers alike"
+            }
+        ]
     },
     {
         id: "3",
@@ -68,6 +118,30 @@ export const CocktailsImg = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FMint%2BJulep.png&w=1920&q=75",
         paratext: "Mint Julep description",
         persentAlcohol: " 20.00%",
+        VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+3+-+Mint+Julep",
+        Ingredients: [
+        ],
+        Presentations: [
+            {
+                startText: "Glassware",
+                endText: "N/A"
+            },
+            {
+                startText: "Ice",
+                endText: "N/A"
+            },
+            {
+                startText: "Garnish",
+                endText: "N/A"
+            },
+        ],
+        Methods: [
+            {
+                text: "1. "
+            },
+        ],
+        Detail: [
+        ]
     },
     {
         id: "4",
@@ -75,6 +149,30 @@ export const CocktailsImg = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FBoulevadier.png&w=1920&q=75",
         paratext: "",
         persentAlcohol: " 25.00%",
+        VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+4+-+Boulevardier",
+        Ingredients: [
+        ],
+        Presentations: [
+            {
+                startText: "Glassware",
+                endText: "N/A"
+            },
+            {
+                startText: "Ice",
+                endText: "N/A"
+            },
+            {
+                startText: "Garnish",
+                endText: "N/A"
+            },
+        ],
+        Methods: [
+            {
+                text: "1. "
+            },
+        ],
+        Detail: [
+        ]
     },
     {
         id: "5",
@@ -82,6 +180,30 @@ export const CocktailsImg = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FSazerac.png&w=1920&q=75",
         paratext: "",
         persentAlcohol: " 30.00%",
+        VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+5+-+Sazerac",
+        Ingredients: [
+        ],
+        Presentations: [
+            {
+                startText: "Glassware",
+                endText: "N/A"
+            },
+            {
+                startText: "Ice",
+                endText: "N/A"
+            },
+            {
+                startText: "Garnish",
+                endText: "N/A"
+            },
+        ],
+        Methods: [
+            {
+                text: "1."
+            },
+        ],
+        Detail: [
+        ]
     },
     {
         id: "6",
@@ -89,6 +211,55 @@ export const CocktailsImg = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FCocktails%2FOld%2BFashioned.png&w=1920&q=75",
         paratext: "This version of the 'Old Fashioned' was first documented in 1806 and contains the 3 orgional elements to be knows as a cocktail. The core (base Spirit) the balance (sugar), and the seasoning (bitters)",
         persentAlcohol: " 35.00%",
+        VideoLink: "",
+        Ingredients: [
+            {
+                startText: "Bourbon",
+                endText: '2 oz'
+            },
+            {
+                startText: "Demerara Syrup 2:1",
+                endText: '0 oz'
+            },
+            {
+                startText: "Angostura Bitters",
+                endText: '3 dashes'
+            },
+
+        ],
+        Presentations: [
+            {
+                startText: "Glassware",
+                endText: "Rocks"
+            },
+            {
+                startText: "Ice",
+                endText: "Large Format"
+            },
+            {
+                startText: "Garnish",
+                endText: "Orange Swath, *optional filthy cherry"
+            },
+        ],
+        Methods: [
+            {
+                text: "1. Measure all ingredients to a mixing beaker"
+            },
+            {
+                text: "2. Add Ice and stirr 30 times to proper dilution"
+            },
+            {
+                text: "3. Strain over large format ice into a Double Old Fashioned Glass using a julep strainer"
+            },
+            {
+                text: "4. Garnish with an orange swath expressing oils over the top"
+            }
+        ],
+        Detail: [
+            {
+                description: "The muddled version of the old fashioned or known as the 1881 Pendennis Club style was said to muddle fruit in order to mask inferior whiskey at its time If you order an Old Fashioned in Wisconsin, it might be made with brandy and sprite also muddled with fruit. This was made popular during the world fair in 1893 and is still adopted today"
+            }
+        ]
     },
     {
         id: "7",
@@ -96,8 +267,38 @@ export const CocktailsImg = [
         Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2F1703069084915-41.png.webp&w=1920&q=75",
         paratext: "test",
         persentAlcohol: " 50.00%",
+        VideoLink: "https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan",
+        Ingredients: [
+            {
+                startText: "Rye whiskey (can be made with bourbon)",
+                endText: '50 dashes'
+            },
+        ],
+        Presentations: [
+            {
+                startText: "Glassware",
+                endText: "50"
+            },
+            {
+                startText: "Ice",
+                endText: "50"
+            },
+            {
+                startText: "Garnish",
+                endText: "50"
+            },
+        ],
+        Methods: [
+            {
+                text: "1. test1"
+            },
+        ],
+        Detail: [
+            {
+                description: "test"
+            }
+        ]
     },
-
 ]
 
 export const CoreBeverage = [
@@ -167,7 +368,37 @@ export const SpiritCategory = [
     {
         id: "1",
         pname: 'Gin',
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FSpirit%2BCategories%2FGIN%2BBAR%2BARTS%2BIMAGE.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FSpirit%2BCategories%2FGIN%2BBAR%2BARTS%2BIMAGE.png&w=1920&q=75",
+        InnerDetails: [
+            {
+                Bearname: 'Beefeater',
+                AlcoholPercent: "40.00%",
+                Description: "Beefeater Pink strawberry is the vibrant new Pink Gin made using the original Beefeater London Dry Recipe with the addition of Natural Strawberry flavouring to give it a vibrant and delicious strawberry taste.",
+                ImgUrl: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLiquor%2BItems%2FBeefeater%2BGin.png&w=1920&q=75"
+            }
+        ],
+        Details: [
+            {
+                FirstText: "Distillery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Category",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "2",

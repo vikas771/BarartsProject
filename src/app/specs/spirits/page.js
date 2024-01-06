@@ -1,12 +1,20 @@
 import React from 'react';
 import Style from './spirits.module.css';
-import common from '../../common.module.css';
+import common from '../../style/innersection.module.css';
 import category from '../../style/category.module.css'
 import { Grid } from '@mui/material';
 import { SpiritCategory } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
+import { useRouter } from 'next/navigation';
+
 
 const Spirits = () => {
+  const Route = useRouter()
+
+  const GetCompleteDetails = async (id) => {
+    console.log("id", id);
+    Route.push(`/specs/spirits/${id}`)
+  }
 
   return (
     <>
@@ -29,7 +37,7 @@ const Spirits = () => {
         <div>
           <Grid container spacing={2} className={category.GridSection}>
             {SpiritCategory.map((item) => (
-              <Grid key={item.id} item xs={4} className={category.TextImgSection}>
+              <Grid key={item.id} item xs={4} className={category.TextImgSection} onClick={() => GetCompleteDetails(item.id)}>
                 <Grid container spacing={2} className={category.ImgTextChild}>
                   <Grid item xs={4} className={category.ImgSection}>
                     <img src={item.Url} alt="not found" />

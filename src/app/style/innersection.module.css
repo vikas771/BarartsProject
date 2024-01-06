@@ -1,0 +1,27 @@
+.SearchParent{
+    text-align: end;
+    position: relative;
+}
+
+.HeadingText h4{
+    margin-top: 0px;
+    font-size: 20px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.SearchInput {
+    width: 290px;
+    border-radius: 10px;
+    padding: 6px 6px 6px 6px;
+    background-color: rgba(255, 255, 255, 255);
+    border: 1px solid rgba(255, 131 , 65, 255);
+  }
+  
+  .SearchIcon {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    transform: translateY(-50%);
+    color: #555;
+  }

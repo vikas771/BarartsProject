@@ -22,7 +22,7 @@ const pages = () => {
                 <Header />
 
                 <div className={Style.CocktailParent}>
-                    <h4>Manhattan</h4>
+                    <h4>{cocktailDetails.pname}</h4>
 
                     <div className={BoxexCss.BoxParent} >
                         <div>
@@ -39,17 +39,17 @@ const pages = () => {
                         </div>
                     </div>
 
-                    <div className={Style.IngredientsParent}>
-                        <h3>Ingredients</h3>
-                        {
-                            cocktailDetails.Ingredients.map((item) => (
+                    {cocktailDetails.Ingredients.length > 0 && (
+                        <div className={Style.IngredientsParent}>
+                            {cocktailDetails.Ingredients.map((item) => (
                                 <div key={item.id} className={Style.WhiskeyParent}>
+                                    <h3>Ingredients</h3>
                                     <p>{item.startText}</p>
                                     <p>{item.endText}</p>
                                 </div>
-                            ))
-                        }
-                    </div>
+                            ))}
+                        </div>
+                    )}
 
                     <div className={Style.IngredientsParent}>
                         <h3>Presentations</h3>
@@ -70,22 +70,23 @@ const pages = () => {
                         )))}
                     </div>
 
-                    <div className={Style.DetailParent}>
-                        <h3>Detail</h3>
-                        {cocktailDetails.Detail.map((item => (
-                            <p key={item.id}>{item.description}</p>
-                        )))}
-                    </div>
+                    {cocktailDetails.Detail.length > 0 && (
+                        <div className={Style.DetailParent}>
+                            <h3>Detail</h3>
+                            {cocktailDetails.Detail.map((item => (
+                                <p key={item.id}>{item.description}</p>
+                            )))}
+                        </div>
+                    )}
 
-                    <div className={Style.VideoParent}>
-                        <video className={Style.VideoChild}>
-                            <source src="https://bararts.s3.amazonaws.com/Videos/MBP+-+Cocktails+-+Video+1+-+Manhattan" type="video/mp4" />
-                        </video>
-                    </div>
-
-
+                    {cocktailDetails.VideoLink ? (
+                        <div className={Style.VideoParent}>
+                            <video className={Style.VideoChild}>
+                                <source src={cocktailDetails.VideoLink} />
+                            </video>
+                        </div>
+                    ) : (null)}
                 </div>
-
 
             </div>
         </>

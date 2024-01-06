@@ -193,7 +193,6 @@ export default function page() {
               <SearchIcon className={style.SearchIcon} />
             </div>
 
-
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 
@@ -203,7 +202,6 @@ export default function page() {
                   label=""
                 />
               </div>
-
 
               <IconButton
                 size="large"
@@ -270,7 +268,6 @@ export default function page() {
           </Toolbar>
         </AppBar>
 
-
         <Drawer variant="permanent" open={open}>
           <DrawerHeader className={style.headerLogo}>
             <div className={style.logoImg}>
@@ -282,7 +279,6 @@ export default function page() {
           </DrawerHeader>
           <Divider />
           <List>
-            {/* {['Dashboard', 'Specs', 'Library', 'Chechlists', 'Marriott', 'Setting', 'Logout'].map((text, index) => ( */}
             <ListItem className={style.listItemParent}>
               <ListItemButton
                 className={`${selectedTab === 'Dashboard' ? style.SelectedTab : style.listItemChild} ${style.ListButton}`}
