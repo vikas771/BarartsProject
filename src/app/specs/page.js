@@ -60,6 +60,7 @@ const Specs = () => {
 
     return (
         <>
+        
             <div className={Style.SpecsParent}>
 
                 <Grid container spacing={2} className='mt-1'>

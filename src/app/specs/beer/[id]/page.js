@@ -16,8 +16,6 @@ const pages = () => {
 
     const BeerDetail = BeerDetails.find((item) => item.id === Id);
 
-    console.log("data", BeerDetail)
-
     return (
         <>
             <div className={Style.BeerParent}>
@@ -36,7 +34,7 @@ const pages = () => {
                             <div className={BoxexCss.TextAreaParent}>
                                 <h3>{BeerDetail.pname}</h3>
                                 <span><LiquorIcon className={BoxexCss.IconStyle} /> ABV :  {BeerDetail.persentAlcohol}  </span>
-                                <span><WhatshotIcon className={BoxexCss.IconStyle} /> Calories :  {BeerDetail.persentAlcohol}</span>
+                                <span><WhatshotIcon className={Style.IconStyle} /> Calories :  {BeerDetail.Calories}</span>
                                 <p>{BeerDetail.description}</p>
                             </div>
                         </div>

@@ -52,6 +52,7 @@ import Wine from '../specs/wines/page';
 import Setting from '../setting/page';
 import Marriott from '../marriott/page';
 import Checklist from '../checklist/page';
+import { useRouter } from 'next/navigation';
 
 const drawerWidth = 240;
 
@@ -120,6 +121,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 );
 
 export default function page() {
+  const router = useRouter();
   const [open, setOpen] = useState(true);
   const [selectedTab, setSelectedTab] = useState('');
   const [anchorEl, setAnchorEl] = useState(null);
@@ -147,7 +149,7 @@ export default function page() {
 
   const handleTabClick = (tabName) => {
     setSelectedTab(tabName);
-    // Add any other logic you need when a tab is selected
+    router.push(`/${tabName.toLowerCase()}`);
   };
 
   const hangleChangeDarkMode = () => {

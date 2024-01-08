@@ -5,8 +5,15 @@ import BoxexCss from '../../style/twobox.module.css'
 import { LowNoABV } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
 import { Grid } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 const Low = () => {
+  const Route = useRouter()
+
+  const GetCompleteDetails = async (id) => {
+    Route.push(`/specs/low/${id}`)
+  }
+
   return (
     <div className={Style.LowParent}>
 
@@ -26,7 +33,7 @@ const Low = () => {
 
       {LowNoABV.map((item) => (
         <div key={item.id} item={item.Url}>
-          <div className={BoxexCss.BoxParent}>
+          <div className={BoxexCss.BoxParent} onClick={() => GetCompleteDetails(item.id)}>
             <div>
               <div className={BoxexCss.ImgParent}>
                 <img src={item.Url} alt='not found' />

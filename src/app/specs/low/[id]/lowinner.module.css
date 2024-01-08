@@ -1,0 +1,6 @@
+.BeerParent {
+    background-color: rgba(248, 248, 248, 255);
+    padding: 10px;
+    display: flex;
+    margin-top: 68px;
+}

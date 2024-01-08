@@ -8,13 +8,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Grid } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
-
 const Beer = () => {
-
   const Route = useRouter()
 
   const GetCompleteDetails = async (id) => {
-    console.log("id", id);
     Route.push(`/specs/beer/${id}`)
   }
 

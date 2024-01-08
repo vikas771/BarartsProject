@@ -14,7 +14,6 @@ const Cocktails = () => {
   const Route = useRouter()
 
   const GetCompleteDetails = async (id) => {
-    console.log("id", id);
     Route.push(`/specs/cocktails/${id}`)
   }
   return (

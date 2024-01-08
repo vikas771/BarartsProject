@@ -1,40 +1,48 @@
 /* globals.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital@1&family=Josefin+Sans:wght@300&family=Mulish:wght@200&family=Oswald:wght@300&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-    --navbar-background-color : #fff;
-    --navbar-text-color : #fff ; 
-    --font_family: 'Poppins', sans-serif !important;
-    --icon_logo_color_navbar : #FF8341;
-    --icon_selected_color_navbar : rgb(255 131 65);
-    --icon_selected_background_color : #f19b6c33;
-    --textColor: white;
-    --buttonTextColor: #fff;
-    --headingColor: #000000;
-    --subheadingColor : #505d6f;
-    --fontFamily: " font-family: 'Mulish', sans-serif;"
+  --navbar-background-color: #fff;
+  --navbar-text-color: #fff;
+  --font_family: 'Poppins', sans-serif !important;
+  --icon_logo_color_navbar: #FF8341;
+  --icon_selected_color_navbar: rgb(255 131 65);
+  --icon_selected_background_color: #f19b6c33;
+  --textColor: white;
+  --buttonTextColor: #fff;
+  --headingColor: #000000;
+  --subheadingColor: #505d6f;
+  --fontFamily: " font-family: 'Mulish', sans-serif;"
 }
 
 body {
-    background-color: rgba(248, 248, 248, 255); 
-    color: #000; 
-    margin: 0px !important;
-    padding: 0px !important;
-    font-family: "'Mulish', sans-serif" !important;
-  }
+  background-color: rgba(248, 248, 248, 255);
+  color: #000;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-family: 'Afacad', sans-serif !important;
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-family: 'Mulish', sans-serif !important;
+  font-family: 'Oswald', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
+}
 
-  **{
-    font-family: "'Mulish', sans-serif" !important;
-  }
+** {
+  font-family: "'Mulish', sans-serif" !important;
+}
 
-  body.darkMode {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Dark text color */
-  }
+body.darkMode {
+  background-color: #333;
+  /* Dark background color */
+  color: #fff;
+  /* Dark text color */
+}
 
-  .dumy{
-    background-color: red;
-  }
+.dumy {
+  background-color: red;
+}
 
-  .css-zxdg2z{
-    padding: 0px !important;
-  }
+.css-zxdg2z {
+  padding: 0px !important;
+}

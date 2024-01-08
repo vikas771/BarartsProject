@@ -1,3 +1,8 @@
+.MarriottSection{
+    display: flex;
+    margin-top: 60px;
+}
+
 .MarriottParent {
     background-color: rgba(248, 248, 248, 255);
     padding: 10px;

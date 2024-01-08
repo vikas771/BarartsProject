@@ -4,3 +4,9 @@
     display: flex;
     margin-top: 68px;
 }
+
+.IconStyle {
+    margin-left: 20px;
+   background-color: rgba(245, 245, 245, 255) !important;
+    color: rgba(251, 123, 44, 255) !important;
+}

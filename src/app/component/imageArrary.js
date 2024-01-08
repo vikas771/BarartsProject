@@ -495,7 +495,29 @@ export const BeerDetails = [
         persentAlcohol: " 04.20%",
         Calories: "110 kcal",
         description: "This light beer is brewed using a combination of barley malts, rice and a blend of premium aroma hop varieties. Featuring a fresh, clean taste with subtle hop aromas, this light lager delivers ultimate refreshment with its delicate malt sweetness and cris",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBudlight.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBudlight.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "3",
@@ -503,7 +525,29 @@ export const BeerDetails = [
         persentAlcohol: " 05.00%",
         Calories: "145 kcal",
         description: "Budweiser is a medium-bodied, flavorful, crisp American-style lager. Brewed with the best barley malt and a blend of premium hop varieties.",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBudweiser.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBudweiser.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "4",
@@ -511,7 +555,29 @@ export const BeerDetails = [
         persentAlcohol: " 04.60%",
         Calories: "148 kcal",
         description: "With a refreshing, smooth taste balanced between heavier European imports and lighter domestic beer, Corona Extra is an even-keeled cerveza made for the beach, the backyard, or whatever you’re feeling.",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FCorona.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FCorona.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "5",
@@ -519,7 +585,29 @@ export const BeerDetails = [
         persentAlcohol: " 04.20%",
         Calories: "125 kcal",
         description: "When someone looks at you and says “Pint?”, this is the pint they’re talking about. If you want something else, you’ll have to specify. It’s rich, it’s creamy, and it’s black (well actually, if you look closely, Guinness is ruby red in color but don’t tel",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FGuiness%2BDraught.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FGuiness%2BDraught.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "6",
@@ -527,7 +615,29 @@ export const BeerDetails = [
         persentAlcohol: " 05.00%",
         Calories: "142 kcal",
         description: "For over 150 years, a ceaseless commitment to premium taste and quality have made Heineken® the most iconic beer brand in the world. When you see the red-star on the green bottle, you know every ice-cold, crisp sip will deliver that richly satisfying flav",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FHeineken.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FHeineken.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "7",
@@ -535,7 +645,29 @@ export const BeerDetails = [
         persentAlcohol: " 04.20%",
         Calories: "95 kcal",
         description: "Michelob ULTRA is the Superior Light Beer brewed for those who understand that it's only worth it if you enjoy it. Containing only 95 calories and 2.6 carbs, Michelob ULTRA is a light lager brewed with the perfect balance of Herkules hops and wholesome gr",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FMichelob%2BUltra.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FMichelob%2BUltra.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "8",
@@ -543,7 +675,29 @@ export const BeerDetails = [
         persentAlcohol: " 04.20%",
         Calories: "102 kcal",
         description: "Coors Light Beer is an American style light lager. This light calorie beer has a light body with clean malt notes and low bitterness.",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FMiller%2BLite.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FMiller%2BLite.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "9",
@@ -551,7 +705,29 @@ export const BeerDetails = [
         persentAlcohol: " 04.40%",
         Calories: "143 kcal",
         description: "Well-balanced taste and light hop character with a crisp, clean finish. Modelo Especial is characterized by an orange blossom honey aroma with a hint of herb testing",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FModelo%2BEspecial.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FModelo%2BEspecial.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "10",
@@ -559,7 +735,29 @@ export const BeerDetails = [
         persentAlcohol: " 05.00%",
         Calories: "175 kcal",
         description: "Since 1984, Samuel Adams Boston Lager has used only the finest hand-selected ingredients to create our perfectly balanced and complex original brew.",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FSam%2BAdams%2BBoston%2BLager.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FSam%2BAdams%2BBoston%2BLager.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "11",
@@ -567,9 +765,30 @@ export const BeerDetails = [
         persentAlcohol: " 05.00%",
         Calories: " 100 kcal",
         description: "Truly Hard Seltzer is a refreshing alcoholic beverage that blends sparkling water with natural fruit flavors, providing a light and effervescent option for those looking for a low-calorie alternative.",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FTruly%2BHard%2BSeltzer.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FTruly%2BHard%2BSeltzer.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
-
 ]
 
 export const LowNoABV = [
@@ -577,25 +796,65 @@ export const LowNoABV = [
         id: "1",
         pname: "Red Bull",
         description: "Red Bull boasts a distinctive and invigorating flavor profile that combines elements of sweetness and tartness with a hint of carbonation. The initial sip reveals a crisp and slightly tangy sensation, followed by a burst of sweetness that balances the ove",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FRed%2BBull%2BRegular.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FRed%2BBull%2BRegular.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Taste",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "2",
         pname: "Red Bull Sugarfree",
         description: "Red Bull Sugar Free offers a distinct and refreshing flavor experience with a notable departure from its original counterpart. This sugar-free alternative maintains the invigorating qualities of Red Bull while providing a lighter taste profile. Upon the f",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FRed%2BBull%2BSugarfree.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FRed%2BBull%2BSugarfree.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Taste",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "3",
         pname: "Fever-Tree",
         description: "Fever-Tree Club Soda is a premium carbonated beverage celebrated for its clean and crisp flavor profile. As a key ingredient in many cocktails and a refreshing standalone drink, Fever-Tree Club Soda is characterized by its pure and effervescent nature. Wi",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FMixersGarnish%2FFever%2BTree%2BGinger%2BBeer.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FMixersGarnish%2FFever%2BTree%2BGinger%2BBeer.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Taste",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "4",
         pname: "Heineken 0.0",
         description: "Heineken 0.0 is a non-alcoholic beer that offers a refreshing and familiar taste with a twist. Pouring into the glass with the iconic golden hue that Heineken is known for, this alcohol-free alternative maintains the essence of the original lager. The ini",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FHeineken%2B0.0.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FLowNoABV%2FHeineken%2B0.0.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Taste",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     }
 ]
 
