@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Style from './dynamic.module.css';
+import common from '../../../style/speccommon.module.css';
 import Header from '../../../header/page';
 import { useParams } from 'next/navigation';
 import LiquorIcon from '@mui/icons-material/Liquor';
@@ -21,7 +22,7 @@ const pages = () => {
             <div className={Style.DynamicParent}>
                 <Header />
 
-                <div className={Style.CocktailParent}>
+                <div className={common.HeadingParent}>
                     <h4>{cocktailDetails.pname}</h4>
 
                     <div className={BoxexCss.BoxParent} >
@@ -40,9 +41,9 @@ const pages = () => {
                     </div>
 
                     {cocktailDetails.Ingredients.length > 0 && (
-                        <div className={Style.IngredientsParent}>
+                        <div className={common.IngredientsParent}>
                             {cocktailDetails.Ingredients.map((item) => (
-                                <div key={item.id} className={Style.WhiskeyParent}>
+                                <div key={item.id} className={common.WhiskeyParent}>
                                     <h3>Ingredients</h3>
                                     <p>{item.startText}</p>
                                     <p>{item.endText}</p>
@@ -51,27 +52,27 @@ const pages = () => {
                         </div>
                     )}
 
-                    <div className={Style.IngredientsParent}>
+                    <div className={common.IngredientsParent}>
                         <h3>Presentations</h3>
                         {cocktailDetails.Presentations.map((item) => (
-                            <div key={item.id} className={Style.WhiskeyParent}>
+                            <div key={item.id} className={common.WhiskeyParent}>
                                 <p>{item.startText}</p>
                                 <p>{item.endText}</p>
                             </div>
                         ))}
                     </div>
 
-                    <div className={Style.IngredientsParent}>
+                    <div className={common.IngredientsParent}>
                         <h3>Methods</h3>
                         {cocktailDetails.Methods.map((item => (
-                            <div key={item.id} className={Style.WhiskeyParent}>
+                            <div key={item.id} className={common.WhiskeyParent}>
                                 <p>{item.text}</p>
                             </div>
                         )))}
                     </div>
 
                     {cocktailDetails.Detail.length > 0 && (
-                        <div className={Style.DetailParent}>
+                        <div className={common.DetailParent}>
                             <h3>Detail</h3>
                             {cocktailDetails.Detail.map((item => (
                                 <p key={item.id}>{item.description}</p>
@@ -80,8 +81,8 @@ const pages = () => {
                     )}
 
                     {cocktailDetails.VideoLink ? (
-                        <div className={Style.VideoParent}>
-                            <video className={Style.VideoChild}>
+                        <div className={common.VideoParent}>
+                            <video className={common.VideoChild}>
                                 <source src={cocktailDetails.VideoLink} />
                             </video>
                         </div>

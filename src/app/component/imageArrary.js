@@ -465,7 +465,29 @@ export const BeerDetails = [
         persentAlcohol: " 05.40%",
         Calories: "",
         description: "A wheat beer brewed with Valencia orange peel for a subtle sweetness and bright, citrus aroma.",
-        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBlue%2BMoon%2BBelgian%2BWhite.png&w=1920&q=75"
+        Url: "https://app.mibararts.com/_next/image?url=https%3A%2F%2Fbararts.s3.amazonaws.com%2FBeerSeltzer%2FBlue%2BMoon%2BBelgian%2BWhite.png&w=1920&q=75",
+        Details: [
+            {
+                FirstText: "Brewery",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Wheat Ale",
+                EndText: "Gin"
+            },
+            {
+                FirstText: "Brand",
+                EndText: "N/A"
+            },
+            {
+                FirstText: "Taste",
+                EndText: "Beefeater"
+            },
+            {
+                FirstText: "Region",
+                EndText: "N/A"
+            },
+        ]
     },
     {
         id: "2",

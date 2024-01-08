@@ -2,11 +2,13 @@
 
 import React from 'react';
 import Style from './innerbeer.module.css';
+import common from '../../../style/speccommon.module.css';
 import Header from '../../../header/page';
 import { useParams } from 'next/navigation';
 import LiquorIcon from '@mui/icons-material/Liquor';
 import BoxexCss from '../../../style/twobox.module.css';
 import { BeerDetails } from '@/app/component/imageArrary';
+import WhatshotIcon from '@mui/icons-material/Whatshot';
 
 const pages = () => {
     const params = useParams()
@@ -18,10 +20,10 @@ const pages = () => {
 
     return (
         <>
-            <div className={Style.DynamicParent}>
+            <div className={Style.BeerParent}>
                 <Header />
 
-                <div className={Style.CocktailParent}>
+                <div className={common.HeadingParent}>
                     <h4>{BeerDetail.pname}</h4>
 
                     <div className={BoxexCss.BoxParent} >
@@ -33,23 +35,22 @@ const pages = () => {
                         <div>
                             <div className={BoxexCss.TextAreaParent}>
                                 <h3>{BeerDetail.pname}</h3>
-                                <span><LiquorIcon className={BoxexCss.IconStyle} /> ABV :  {BeerDetail.persentAlcohol} </span>
-                                <p>{BeerDetail.paratext}</p>
+                                <span><LiquorIcon className={BoxexCss.IconStyle} /> ABV :  {BeerDetail.persentAlcohol}  </span>
+                                <span><WhatshotIcon className={BoxexCss.IconStyle} /> Calories :  {BeerDetail.persentAlcohol}</span>
+                                <p>{BeerDetail.description}</p>
                             </div>
                         </div>
                     </div>
 
-                    {/* {cocktailDetails.Ingredients.length > 0 && (
-                        <div className={Style.IngredientsParent}>
-                            {cocktailDetails.Ingredients.map((item) => (
-                                <div key={item.id} className={Style.WhiskeyParent}>
-                                    <h3>Ingredients</h3>
-                                    <p>{item.startText}</p>
-                                    <p>{item.endText}</p>
+                        <div className={common.IngredientsParent}>
+                            <h3>Details</h3>
+                            {BeerDetail.Details.map((item) => (
+                                <div key={item.id} className={common.WhiskeyParent}>
+                                    <p>{item.FirstText}</p>
+                                    <p>{item.EndText}</p>
                                 </div>
                             ))}
                         </div>
-                    )} */}
 
                 </div>
 
