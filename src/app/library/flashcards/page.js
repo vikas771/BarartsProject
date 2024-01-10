@@ -1,12 +1,13 @@
 "use client"
+import { Grid } from '@mui/material';
 import React, { useRef } from 'react';
+import Header from '../../header/page';
 import Style from './flashcards.module.css';
 import common from '../../common.module.css';
 import carouselCss from '../../style/carousel.module.css'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import SearchIcon from '@mui/icons-material/Search';
-import { Grid } from '@mui/material';
 import { BourbonHistory, CoreBeveragelLibrary, SignatureCocktails } from '@/app/component/imageArrary';
 
 const page = () => {
@@ -56,81 +57,86 @@ const page = () => {
 
     return (
         <>
-            <div className={Style.FlashcardsParent}>
+            <div className={Style.FlashcardsSection}>
+                <Header />
 
-                <Grid container spacing={2}>
-                    <Grid item xs={6} className={common.HeadingText}>
-                        <h4>Cocktails</h4>
+                <div className={Style.FlashcardsParent}>
+
+                    <Grid container spacing={2}>
+                        <Grid item xs={6} className={common.HeadingText}>
+                            <h4>Cocktails</h4>
+                        </Grid>
+                        <Grid item xs={6} className={common.SearchParent}>
+                            <input
+                                type="text"
+                                placeholder="Search Cocktails"
+                                className={common.SearchInput}
+                            />
+                            <SearchIcon className={common.SearchIcon} />
+                        </Grid>
                     </Grid>
-                    <Grid item xs={6} className={common.SearchParent}>
-                        <input
-                            type="text"
-                            placeholder="Search Cocktails"
-                            className={common.SearchInput}
-                        />
-                        <SearchIcon className={common.SearchIcon} />
-                    </Grid>
-                </Grid>
 
-                {/* Bourbon History or First  carousel start  here  */}
+                    {/* Bourbon History or First  carousel start  here  */}
 
-                <div className={Style.FirstCarousels}>
-                    <h3>Bourbon History</h3>
-                    <div className={Style.FirstParent} ref={firstBox}>
-                        {BourbonHistory.map((item) => (
-                            <div key={item.Url} className={Style.FirstImgSection}>
-                                <img src={item.Url} alt='not find' />
-                                <h3>{item.pname}</h3>
-                                <p>{item.question} flashcards</p>
-                            </div>
-                        )
-                        )}
+                    <div className={Style.FirstCarousels}>
+                        <h3>Bourbon History</h3>
+                        <div className={Style.FirstParent} ref={firstBox}>
+                            {BourbonHistory.map((item) => (
+                                <div key={item.Url} className={Style.FirstImgSection}>
+                                    <img src={item.Url} alt='not find' />
+                                    <h3>{item.pname}</h3>
+                                    <p>{item.question} flashcards</p>
+                                </div>
+                            )
+                            )}
+                        </div>
+                        <button className={carouselCss.NextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+                        <button className={carouselCss.PreviousBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
                     </div>
-                    <button className={carouselCss.NextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
-                    <button className={carouselCss.PreviousBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
-                </div>
 
-                {/* Bourbon History or First  carousel end  here  */}
+                    {/* Bourbon History or First  carousel end  here  */}
 
-                {/* Signature Cocktails  or Second  carousel start  here  */}
+                    {/* Signature Cocktails  or Second  carousel start  here  */}
 
-                <div className={Style.FirstCarousels}>
-                    <h3>Signature Cocktails</h3>
-                    <div className={Style.FirstParent} ref={secondBox}>
-                        {SignatureCocktails.map((item) => (
-                            <div key={item.Url} className={Style.FirstImgSection}>
-                                <img src={item.Url} alt='not find' />
-                                <h3>{item.pname}</h3>
-                                <p>{item.question} flashcards</p>
-                            </div>
-                        )
-                        )}
+                    <div className={Style.FirstCarousels}>
+                        <h3>Signature Cocktails</h3>
+                        <div className={Style.FirstParent} ref={secondBox}>
+                            {SignatureCocktails.map((item) => (
+                                <div key={item.Url} className={Style.FirstImgSection}>
+                                    <img src={item.Url} alt='not find' />
+                                    <h3>{item.pname}</h3>
+                                    <p>{item.question} flashcards</p>
+                                </div>
+                            )
+                            )}
+                        </div>
+                        <button className={carouselCss.NextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+                        <button className={carouselCss.PreviousBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
                     </div>
-                    <button className={carouselCss.NextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
-                    <button className={carouselCss.PreviousBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
-                </div>
 
-                {/* Signature Cocktails or Second  carousel end  here  */}
+                    {/* Signature Cocktails or Second  carousel end  here  */}
 
-                {/* Core Beverage  or third  carousel start  here  */}
+                    {/* Core Beverage  or third  carousel start  here  */}
 
-                <div className={Style.FirstCarousels}>
-                    <h3>Core Beverage</h3>
-                    <div className={Style.FirstParent} ref={thirdBox}>
-                        {CoreBeveragelLibrary.map((item) => (
-                            <div key={item.Url} className={Style.FirstImgSection}>
-                                <img src={item.Url} alt='not find' />
-                                <h3>{item.pname}</h3>
-                                <p>{item.question} flashcards</p>
-                            </div>
-                        )
-                        )}
+                    <div className={Style.FirstCarousels}>
+                        <h3>Core Beverage</h3>
+                        <div className={Style.FirstParent} ref={thirdBox}>
+                            {CoreBeveragelLibrary.map((item) => (
+                                <div key={item.Url} className={Style.FirstImgSection}>
+                                    <img src={item.Url} alt='not find' />
+                                    <h3>{item.pname}</h3>
+                                    <p>{item.question} flashcards</p>
+                                </div>
+                            )
+                            )}
+                        </div>
+                        <button className={carouselCss.NextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+                        <button className={carouselCss.PreviousBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
                     </div>
-                    <button className={carouselCss.NextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
-                    <button className={carouselCss.PreviousBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
-                </div>
 
-                {/* Core Beverage or Third  carousel end  here  */}
+                    {/* Core Beverage or Third  carousel end  here  */}
+
+                </div>
 
             </div>
         </>

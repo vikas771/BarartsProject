@@ -1,6 +1,17 @@
-.CheckParent {
+.CheckSection{
+    display: flex;
+    margin-top: 67px;
+    padding: 5px;
     background-color: rgba(248, 248, 248, 255);
-    padding: 12px;
+}
+.parent_checklist{
+    width: 100%;
+}
+
+.ChecklistHeader{
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
 }
 
 .IconStyle{
@@ -15,7 +26,6 @@
 
 .MainChild{
     background-color: rgba(248, 248, 248, 255);
-    margin: auto;
 }
 
 .IconAndText{

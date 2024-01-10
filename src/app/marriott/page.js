@@ -51,41 +51,45 @@ const page = () => {
                 <div className={Style.MarriottParent}>
                     <h3>Marriott</h3>
 
-                    {/* First Carousel  start here */}
+                    <div className={Style.CarouselsParent}>
 
-                    <div className={Style.FirstCarousels}>
-                        <div className={Style.FirstParent} ref={firstBox}>
-                            {MarriottFirstcarousel.map((item) => (
-                                <div key={item.id} className={Style.FirstImgSection}>
-                                    <img src={item.Url} alt='not found' />
-                                </div>
-                            )
-                            )}
+                        {/* First Carousel  start here */}
+
+                        <div className={Style.FirstCarousels}>
+                            <div className={Style.FirstParent} ref={firstBox}>
+                                {MarriottFirstcarousel.map((item) => (
+                                    <div key={item.id} className={Style.FirstImgSection}>
+                                        <img src={item.Url} alt='not found' />
+                                    </div>
+                                )
+                                )}
+                            </div>
+                            <button className={Style.FirstCarouselNextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
+                            <button className={Style.FirstCarouselPrevBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
                         </div>
-                        <button className={Style.FirstCarouselNextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-                        <button className={Style.FirstCarouselPrevBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
-                    </div>
 
-                    {/* First Carousel  start here */}
+                        {/* First Carousel  start here */}
 
-                    {/* Second Carousel  start here */}
+                        {/* Second Carousel  start here */}
 
-                    <div className={Style.SecondCarousels}>
-                        <div className={Style.SecondParent} ref={secondBox}>
-                            {MarriottFirstcarousel2.map((item) => (
-                                <div key={item.id} className={Style.SecondImgSection}>
-                                    <img src={item.Url} alt='not found' />
-                                    <span className={Style.TextCode}>Marsha Code: {item.Code}</span>
-                                    <span className={Style.LogoText}><LanguageIcon /> Visit Website </span>
-                                </div>
-                            )
-                            )}
+                        <div className={Style.SecondCarousels}>
+                            <div className={Style.SecondParent} ref={secondBox}>
+                                {MarriottFirstcarousel2.map((item) => (
+                                    <div key={item.id} className={Style.SecondImgSection}>
+                                        <img src={item.Url} alt='not found' />
+                                        <span className={Style.TextCode}>Marsha Code: {item.Code}</span>
+                                        <span className={Style.LogoText}><LanguageIcon /> Visit Website </span>
+                                    </div>
+                                )
+                                )}
+                            </div>
+                            <button className={Style.SecondCarouselNextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnSecond} /></button>
+                            <button className={Style.SecondCarouselPrev} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnSecond} /></button>
                         </div>
-                        <button className={Style.SecondCarouselNextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnSecond} /></button>
-                        <button className={Style.SecondCarouselPrev} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnSecond} /></button>
-                    </div>
 
-                    {/* Second Carousel  end here */}
+                        {/* Second Carousel  end here */}
+
+                    </div>
 
                     <div>
                         <Grid container spacing={2} className={Style.FormSectionParent}>

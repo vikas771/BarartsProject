@@ -1,7 +1,18 @@
-.MarriottParent {
+.CoursesSection{
+    display: flex;
+    margin-top: 68px;
+    padding: 5px;
     background-color: rgba(248, 248, 248, 255);
 }
 
+.CoursesParent h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.CarouselsMainParent{
+    width: 1260px;
+}
 
 /* First Carousel css start here */
 
@@ -16,7 +27,6 @@
     background-color: rgba(244, 244, 244, 255);
     position: relative;
     margin-top: 10px;
-    width: 1220px;
 }
 
 
@@ -35,7 +45,7 @@
 
 .FirstImgSection img {
     background-color: rgba(255, 255, 255, 255);
-    width: 1205px;
+    width: 1240px;
     color: white;
     border-radius: 10px;
 }
@@ -58,7 +68,6 @@
 
 .iconBtnFirst {
     font-size: 15px !important;
-    margin-top: 5px;
 }
 
 
@@ -69,8 +78,8 @@
 .SecondCarousels {
     background-color: rgba(244, 244, 244, 255);
     position: relative;
-    min-height: 350px !important;
-    width: 1230px !important;
+    min-height: 320px !important;
+    margin-top: 10px;
 }
 
 .SecondCarousels h3 {
@@ -110,23 +119,5 @@
     top: 60%;
 }
 
-.SecondCarouselNextBtn {
-    position: absolute;
-    top: 90%;
-    right: 0%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.SecondCarouselPrevBtn {
-    position: absolute;
-    top: 90%;
-    right: 3%;
-    border: 3px solid rgba(255, 131, 65, 255);
-}
-
-.iconBtnSecond {
-    font-size: 15px !important;
-    margin-top: 5px;
-}
 
 /* first carousel end  here of Cocktails */

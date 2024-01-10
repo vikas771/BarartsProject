@@ -1,4 +1,10 @@
-.BeerParent {
+.BeerSection {
+    display: flex;
+    margin-top: 67px;
+    padding: 5px;
     background-color: rgba(248, 248, 248, 255);
-    padding: 10px;
+}
+
+.BeerParent {
+    width: 100%;
 }

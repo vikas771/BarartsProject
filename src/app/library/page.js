@@ -9,6 +9,7 @@ import { Flashcards, Library, Quizzes } from '../component/imageArrary';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import SearchIcon from '@mui/icons-material/Search';
+import Header from '../header/page';
 
 const page = () => {
   const firstBox = useRef(null);
@@ -59,288 +60,294 @@ const page = () => {
 
   return (
     <>
-      <div className={Style.libraryparent}>
-
-        <Grid container spacing={2}>
-          <Grid item xs={6} className={common.HeadingText}>
-            <h4>Library</h4>
-          </Grid>
-          <Grid item xs={6} className={common.SearchParent}>
-            <input
-              type="text"
-              placeholder="Search Cocktails"
-              className={common.SearchInput}
-            />
-            <SearchIcon className={common.SearchIcon} />
-          </Grid>
-        </Grid>
+      <div className={Style.LibrarySection}>
+        <Header />
 
 
-        <div className={Style.SecondParent}>
-          <Grid container spacing={1}>
-            <Grid item xs={4}>
-              <div className={Style.FlashcardParent}>
-                <div className={Style.FirstCircle}>
-                  <div>
-                    <h5>Flashcard Progress</h5>
-                    <p>just a step away to get certificate</p>
-                  </div>
-                  <div className={Style.progressbar}>
-                    <h6>54%</h6>
-                  </div>
-                </div>
+        <div className={Style.libraryparent}>
 
-                <div className={Style.scrollContainer}>
-                  <List >
-                    <ListItem className={Style.ListItem}>
-                      <div>
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Distilling Whiskey</h6>
-                            <p>10 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Warehouse and Barrels</h6>
-                            <p>10 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Whiskeys From Around the World</h6>
-                            <p>10 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Manhattan</h6>
-                            <p>0 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Whiskey Sour</h6>
-                            <p>3 Flashcards</p>
-                          </div>
-                        </div>
-
-                      </div>
-                    </ListItem>
-                  </List>
-                </div>
-              </div>
-
+          <Grid container spacing={2}>
+            <Grid item xs={6} className={common.HeadingText}>
+              <h4>Library</h4>
             </Grid>
-
-            <Grid item xs={4}>
-              <div className={Style.FlashcardParent}>
-
-                <div className={Style.FirstCircle}>
-                  <div>
-                    <h5>Quizzes  Progress</h5>
-                    <p>just a step away to get certificate</p>
-                  </div>
-                  <div className={Style.progressbar}>
-                    <h6>54%</h6>
-                  </div>
-                </div>
-
-                <div className={Style.scrollContainer} >
-                  <List >
-                    <ListItem className={Style.ListItem}>
-                      <div>
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Distilling Whiskey</h6>
-                            <p>10 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Warehouse and Barrels</h6>
-                            <p>10 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Whiskeys From Around the World</h6>
-                            <p>10 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Manhattan</h6>
-                            <p>7 Flashcards</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Whiskey Sour</h6>
-                            <p>4 Flashcards</p>
-                          </div>
-                        </div>
-
-                      </div>
-                    </ListItem>
-                  </List>
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={4}>
-              <div className={Style.FlashcardParent}>
-
-                <div className={Style.FirstCircle}>
-                  <div>
-                    <h5>Flashcard Progress</h5>
-                    <p>just a step away to get certificate</p>
-                  </div>
-                  <div className={Style.progressbar}>
-                    <h6>54%</h6>
-                  </div>
-                </div>
-
-                <div className={Style.scrollContainer}>
-                  <List >
-                    <ListItem className={Style.ListItem}>
-                      <div>
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Manhattan</h6>
-                            <p>Complete Course to Earn Certificate</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Whiskey Sour</h6>
-                            <p>Complete Course to Earn Certificate</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Mint-Julep</h6>
-                            <p>Complete Course to Earn Certificate</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Boulevardie</h6>
-                            <p>Complete Course to Earn Certificate</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Sazerac</h6>
-                            <p>Complete Course to Earn Certificate</p>
-                          </div>
-                        </div>
-
-                        <div className={Style.IconParent}>
-                          <ArticleIcon className={Style.iconStyle} />
-                          <div className={Style.IconText}>
-                            <h6>Old Fashioned</h6>
-                            <p>Complete Course to Earn Certificate</p>
-                          </div>
-                        </div>
-                      </div>
-                    </ListItem>
-                  </List>
-                </div>
-              </div>
+            <Grid item xs={6} className={common.SearchParent}>
+              <input
+                type="text"
+                placeholder="Search Cocktails"
+                className={common.SearchInput}
+              />
+              <SearchIcon className={common.SearchIcon} />
             </Grid>
           </Grid>
-        </div>
 
-        {/* Courses or First carousel start here  */}
 
-        <div className={Style.FirstCarousels}>
-          <h3>Courses</h3>
-          <div className={Style.FirstParent} ref={firstBox}>
-            {Library.map((item) => (
-              <div key={item.Url} className={Style.FirstImgSection}>
-                <video width="330" height="210">
-                  <source src={item.Url} type="video/mp4" />
-                </video>
-                <h3>{item.pname}</h3>
-              </div>
-            )
-            )}
+          <div className={Style.SecondParent}>
+            <Grid container spacing={1}>
+              <Grid item xs={4}>
+                <div className={Style.FlashcardParent}>
+                  <div className={Style.FirstCircle}>
+                    <div>
+                      <h5>Flashcard Progress</h5>
+                      <p>just a step away to get certificate</p>
+                    </div>
+                    <div className={Style.progressbar}>
+                      <h6>54%</h6>
+                    </div>
+                  </div>
+
+                  <div className={Style.scrollContainer}>
+                    <List >
+                      <ListItem className={Style.ListItem}>
+                        <div>
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Distilling Whiskey</h6>
+                              <p>10 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Warehouse and Barrels</h6>
+                              <p>10 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Whiskeys From Around the World</h6>
+                              <p>10 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Manhattan</h6>
+                              <p>0 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Whiskey Sour</h6>
+                              <p>3 Flashcards</p>
+                            </div>
+                          </div>
+
+                        </div>
+                      </ListItem>
+                    </List>
+                  </div>
+                </div>
+
+              </Grid>
+
+              <Grid item xs={4}>
+                <div className={Style.FlashcardParent}>
+
+                  <div className={Style.FirstCircle}>
+                    <div>
+                      <h5>Quizzes  Progress</h5>
+                      <p>just a step away to get certificate</p>
+                    </div>
+                    <div className={Style.progressbar}>
+                      <h6>54%</h6>
+                    </div>
+                  </div>
+
+                  <div className={Style.scrollContainer} >
+                    <List >
+                      <ListItem className={Style.ListItem}>
+                        <div>
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Distilling Whiskey</h6>
+                              <p>10 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Warehouse and Barrels</h6>
+                              <p>10 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Whiskeys From Around the World</h6>
+                              <p>10 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Manhattan</h6>
+                              <p>7 Flashcards</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Whiskey Sour</h6>
+                              <p>4 Flashcards</p>
+                            </div>
+                          </div>
+
+                        </div>
+                      </ListItem>
+                    </List>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <div className={Style.FlashcardParent}>
+
+                  <div className={Style.FirstCircle}>
+                    <div>
+                      <h5>Flashcard Progress</h5>
+                      <p>just a step away to get certificate</p>
+                    </div>
+                    <div className={Style.progressbar}>
+                      <h6>54%</h6>
+                    </div>
+                  </div>
+
+                  <div className={Style.scrollContainer}>
+                    <List >
+                      <ListItem className={Style.ListItem}>
+                        <div>
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Manhattan</h6>
+                              <p>Complete Course to Earn Certificate</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Whiskey Sour</h6>
+                              <p>Complete Course to Earn Certificate</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Mint-Julep</h6>
+                              <p>Complete Course to Earn Certificate</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Boulevardie</h6>
+                              <p>Complete Course to Earn Certificate</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Sazerac</h6>
+                              <p>Complete Course to Earn Certificate</p>
+                            </div>
+                          </div>
+
+                          <div className={Style.IconParent}>
+                            <ArticleIcon className={Style.iconStyle} />
+                            <div className={Style.IconText}>
+                              <h6>Old Fashioned</h6>
+                              <p>Complete Course to Earn Certificate</p>
+                            </div>
+                          </div>
+                        </div>
+                      </ListItem>
+                    </List>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
           </div>
-          <button className={carouselCss.NextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
-          <button className={carouselCss.PreviousBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
-        </div>
 
+          {/* Courses or First carousel start here  */}
 
-        {/* Courses or First  carousel end  here  */}
-
-        {/* Quizzes or Second  carousel start  here  */}
-
-
-        <div className={Style.SecondCarousels}>
-          <h3>Quizzes</h3>
-          <div className={Style.SecondParent} ref={secondBox}>
-            {Quizzes.map((item) => (
-              <div key={item.Url} className={Style.SecondImgSection}>
-                <img src={item.Url} alt='not find' />
-                <h3>{item.pname}</h3>
-                <p>{item.question} questions</p>
-              </div>
-            )
-            )}
+          <div className={Style.FirstCarousels}>
+            <h3>Courses</h3>
+            <div className={Style.FirstParent} ref={firstBox}>
+              {Library.map((item) => (
+                <div key={item.Url} className={Style.FirstImgSection}>
+                  <video width="330" height="210">
+                    <source src={item.Url} type="video/mp4" />
+                  </video>
+                  <h3>{item.pname}</h3>
+                </div>
+              )
+              )}
+            </div>
+            <button className={carouselCss.NextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+            <button className={carouselCss.PreviousBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
           </div>
-          <button className={carouselCss.NextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
-          <button className={carouselCss.PreviousBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon}/></button>
-        </div>
 
 
-        {/* Quizzes or Second  carousel end  here  */}
+          {/* Courses or First  carousel end  here  */}
 
-        {/* Flashcards  Second  carousel start  here  */}
+          {/* Quizzes or Second  carousel start  here  */}
 
-        <div className={Style.SecondCarousels}>
-          <h3>Flashcards</h3>
-          <div className={Style.SecondParent} ref={thirdBox}>
-            {Flashcards.map((item) => (
-              <div key={item.Url} className={Style.SecondImgSection}>
-                <img src={item.Url} alt='not find' />
-                <h3>{item.pname}</h3>
-                <p>{item.question} flashcards</p>
-              </div>
-            )
-            )}
+
+          <div className={Style.SecondCarousels}>
+            <h3>Quizzes</h3>
+            <div className={Style.SecondParent} ref={secondBox}>
+              {Quizzes.map((item) => (
+                <div key={item.Url} className={Style.SecondImgSection}>
+                  <img src={item.Url} alt='not find' />
+                  <h3>{item.pname}</h3>
+                  <p>{item.question} questions</p>
+                </div>
+              )
+              )}
+            </div>
+            <button className={carouselCss.NextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+            <button className={carouselCss.PreviousBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
           </div>
-          <button className={carouselCss.NextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon}/></button>
-          <button className={carouselCss.PreviousBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon}/></button>
-        </div>
 
-        {/* Flashcards  Second  carousel end  here  */}
+
+          {/* Quizzes or Second  carousel end  here  */}
+
+          {/* Flashcards  Second  carousel start  here  */}
+
+          <div className={Style.SecondCarousels}>
+            <h3>Flashcards</h3>
+            <div className={Style.SecondParent} ref={thirdBox}>
+              {Flashcards.map((item) => (
+                <div key={item.Url} className={Style.SecondImgSection}>
+                  <img src={item.Url} alt='not find' />
+                  <h3>{item.pname}</h3>
+                  <p>{item.question} flashcards</p>
+                </div>
+              )
+              )}
+            </div>
+            <button className={carouselCss.NextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={carouselCss.PreAndNextIcon} /></button>
+            <button className={carouselCss.PreviousBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={carouselCss.PreAndNextIcon} /></button>
+          </div>
+
+          {/* Flashcards  Second  carousel end  here  */}
+
+        </div>
 
       </div>
     </>

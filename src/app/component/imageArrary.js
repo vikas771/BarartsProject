@@ -1314,3 +1314,12 @@ export const HistoryCourses = [
         Url: "https://bararts.s3.amazonaws.com/Videos/MBP+-+History-+Video+3+-+Whiskeys+From+Around+the+World"
     },
 ]
+
+export const CheckList= [
+    {
+        description : "Opening Sidework for Bartenders"
+    },
+    {
+        description : "Opening Sidework for Bartenders"
+    }
+]

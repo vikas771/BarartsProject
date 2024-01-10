@@ -1,10 +1,12 @@
 "use client"
 
 import React, { useRef } from 'react'
-import Style from './courses.module.css'
+import Style from './courses.module.css';
+import common from '../../style/carousel.module.css';
 import { CocktailsCouses, Courses, HistoryCourses } from '../../component/imageArrary';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import Header from '../../header/page';
 
 const page = () => {
     const firstBox = useRef(null);
@@ -54,68 +56,74 @@ const page = () => {
     // Second Carousel button end  here 
     return (
         <>
-            <div className={Style.MarriottParent}>
-                <h3>Courses</h3>
+            <div className={Style.CoursesSection}>
+                <Header />
 
-                {/* First Carousel  start here */}
+                <div className={Style.CoursesParent}>
+                    <h3>Courses</h3>
 
-                <div className={Style.FirstCarousels}>
-                    <div className={Style.FirstParent} ref={firstBox}>
-                        {Courses.map((item) => (
-                            <div key={item.id} className={Style.FirstImgSection}>
-                                <img src={item.Url} alt='not found' />
+                    <div className={Style.CarouselsMainParent}>
+                        {/* First Carousel  start here */}
+
+                        <div className={Style.FirstCarousels}>
+                            <div className={Style.FirstParent} ref={firstBox}>
+                                {Courses.map((item) => (
+                                    <div key={item.id} className={Style.FirstImgSection}>
+                                        <img src={item.Url} alt='not found' />
+                                    </div>
+                                )
+                                )}
                             </div>
-                        )
-                        )}
-                    </div>
-                    <button className={Style.FirstCarouselNextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
-                    <button className={Style.FirstCarouselPrevBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
-                </div>
+                            <button className={Style.FirstCarouselNextBtn} onClick={FirstCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnFirst} /></button>
+                            <button className={Style.FirstCarouselPrevBtn} onClick={FirstCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnFirst} /></button>
+                        </div>
 
-                {/* First Carousel  start here */}
+                        {/* First Carousel  start here */}
 
-                {/* Second Carousel  start here */}
+                        {/* Second Carousel  start here */}
 
-                <div className={Style.SecondCarousels}>
-                    <h3>Cocktails</h3>
-                    <div className={Style.SecondParent} ref={secondBox}>
-                        {CocktailsCouses.map((item) => (
-                            <div key={item.Url} className={Style.SecondImgSection}>
-                                <video width="330" height="210">
-                                    <source src={item.Url} type="video/mp4" />
-                                </video>
-                                <h3>{item.pname}</h3>
+                        <div className={Style.SecondCarousels}>
+                            <h3>Cocktails</h3>
+                            <div className={Style.SecondParent} ref={secondBox}>
+                                {CocktailsCouses.map((item) => (
+                                    <div key={item.Url} className={Style.SecondImgSection}>
+                                        <video width="330" height="210">
+                                            <source src={item.Url} type="video/mp4" />
+                                        </video>
+                                        <h3>{item.pname}</h3>
+                                    </div>
+                                )
+                                )}
                             </div>
-                        )
-                        )}
-                    </div>
-                    <button className={Style.SecondCarouselNextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnSecond} /></button>
-                    <button className={Style.SecondCarouselPrevBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnSecond} /></button>
-                </div>
+                            <button className={common.NextBtn} onClick={SecondCarouselNext}><ArrowForwardIosIcon className={common.PreAndNextIcon} /></button>
+                            <button className={common.PreviousBtn} onClick={SecondCarouselPrev}><ArrowBackIosIcon className={common.PreAndNextIcon} /></button>
+                        </div>
 
-                {/* Second Carousel  end here */}
+                        {/* Second Carousel  end here */}
 
-                {/* Third Carousel  start here */}
+                        {/* Third Carousel  start here */}
 
-                <div className={Style.SecondCarousels}>
-                    <h3>Cocktails</h3>
-                    <div className={Style.SecondParent} ref={thirdBox}>
-                        {HistoryCourses.map((item) => (
-                            <div key={item.Url} className={Style.SecondImgSection}>
-                                <video width="330" height="210">
-                                    <source src={item.Url} type="video/mp4" />
-                                </video>
-                                <h3>{item.pname}</h3>
+                        <div className={Style.SecondCarousels}>
+                            <h3>History</h3>
+                            <div className={Style.SecondParent} ref={thirdBox}>
+                                {HistoryCourses.map((item) => (
+                                    <div key={item.Url} className={Style.SecondImgSection}>
+                                        <video width="330" height="210">
+                                            <source src={item.Url} type="video/mp4" />
+                                        </video>
+                                        <h3>{item.pname}</h3>
+                                    </div>
+                                )
+                                )}
                             </div>
-                        )
-                        )}
+                            <button className={common.NextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={common.PreAndNextIcon} /></button>
+                            <button className={common.PreviousBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={common.PreAndNextIcon} /></button>
+                        </div>
+
+                        {/* Third Carousel  end here */}
                     </div>
-                    <button className={Style.SecondCarouselNextBtn} onClick={ThirdCarouselNext}><ArrowForwardIosIcon className={Style.iconBtnSecond} /></button>
-                    <button className={Style.SecondCarouselPrevBtn} onClick={ThirdCarouselPrev}><ArrowBackIosIcon className={Style.iconBtnSecond} /></button>
+
                 </div>
-
-                {/* Third Carousel  end here */}
-
 
             </div>
         </>

@@ -1,6 +1,12 @@
-.FlashcardsParent{
+.quizzesSection{
+    display: flex;
+    margin-top: 68px;
+    padding: 5px;
     background-color: rgba(248, 248, 248, 255);
-    padding: 10px;
+}
+
+.CarouselsParent{
+    width: 1270px;
 }
 
 /* Second carousel start  here of Cocktails */
@@ -10,7 +16,6 @@
     margin-top: 10px;
     position: relative;
     min-height: 300px !important;
-    width: 1250px !important;
     border: 1px solid rgba(244, 244, 244, 255);
 }
 

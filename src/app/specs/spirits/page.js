@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import Style from './spirits.module.css';
 import common from '../../style/innersection.module.css';
@@ -6,6 +8,7 @@ import { Grid } from '@mui/material';
 import { SpiritCategory } from '../../component/imageArrary';
 import SearchIcon from '@mui/icons-material/Search';
 import { useRouter } from 'next/navigation';
+import Header from '../../header/page';
 
 
 const Spirits = () => {
@@ -18,7 +21,10 @@ const Spirits = () => {
 
   return (
     <>
-      <div className={Style.SpiritsSection}>
+    <div className={Style.SpritSection}>
+      <Header />
+   
+      <div className={Style.SpiritParent}>
 
         <Grid container spacing={2}>
           <Grid item xs={6} className={common.HeadingText}>
@@ -50,6 +56,8 @@ const Spirits = () => {
             ))}
           </Grid>
         </div>
+
+      </div>
 
       </div>
     </>

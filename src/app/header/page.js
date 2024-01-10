@@ -129,8 +129,6 @@ export default function page() {
   const [isCollapse, setIsCollapse] = useState(false);
   const [isCollapselibrary, setIsCollapseLibrary] = useState(false);
 
-
-
   const handleCollapse = () => {
     setIsCollapse(!isCollapse);
   };
@@ -149,7 +147,7 @@ export default function page() {
 
   const handleTabClick = (tabName) => {
     setSelectedTab(tabName);
-    router.push(`/${tabName.toLowerCase()}`);
+    // router.push(`/${tabName.toLowerCase()}`);
   };
 
   const hangleChangeDarkMode = () => {
@@ -520,7 +518,7 @@ export default function page() {
 
         </Drawer>
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-          <DrawerHeader />
+          {/* <DrawerHeader /> */}
           {selectedTab == "Dashboard" && <Dashboard />}
           {selectedTab == "Specs" && <Specs />}
           {selectedTab == "Cocktails" && <Cocktails />}

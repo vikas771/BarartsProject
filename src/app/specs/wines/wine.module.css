@@ -1,4 +1,10 @@
 .WineSection{
-    background-color: rgba(248, 248, 248, 255);
+    display: flex;
+    margin-top: 67px;
     padding: 5px;
+    background-color: rgba(248, 248, 248, 255);
+}
+
+.WineParent{
+    width: 100%;
 }
